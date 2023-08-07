@@ -3,39 +3,79 @@ body {
   margin: 0px;
 }
 
+/* Add the styles to center the name */
+header .flex-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+}
+
+/* Add the styles for the navigation items */
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: rgb(170, 1, 1);
+  filter: brightness(1.2);
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff; /* Set your preferred text color for the navbar links */
+  font-size: 16px;
+}
+
+#navbar a:hover {
+  color: #ff0000; /* Set your preferred hover text color for the navbar links */
+}
+
+/* Add CSS for the navbar */
+.nav-container {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  z-index: 2; /* Ensure the navbar appears above the content */
+  margin: 0px;
+}
+
+
 #top-header {
   display: flex;
+  flex-direction: column;
   width: 100%;
+  position: fixed;
+  z-index: 1;
   background-color: black;
   border-bottom: 5px solid rgb(170, 1, 1);
   box-shadow: 0px 5px 10px rgb(45, 44, 44);
   align-items: center;
-  position: fixed;
-  z-index: 1;
-  margin-top: -20px;
-}
-
-.header-left-column {
-  display: flex;
-  flex: 1.1; /* Flex the left column to take available space */
-  flex-direction: column; /* Stack elements vertically inside the right column */
-  margin: 0px;
   color: rgb(255, 251, 246);
-  background: black;
-  text-align: center;
-  font-size: x-large;
-  padding: 20px;
-}
-
-.header-right-column {
-  display: flex; /* Enable flexbox for the right column */
-  flex: 2; /* Flex the right column to take available space */
-  flex-direction: column; /* Stack elements vertically inside the right column */
-  margin: 0px;
-  color: rgb(255, 251, 246);
-  background-color: black;
-  text-align: left;
-  padding: 20px;
+  padding: 10px;
 }
 
 .contact {
@@ -104,45 +144,7 @@ a:hover {
   color: rgb(0, 157, 255);
 }
 
-/* Add CSS for the navbar */
-#navbar {
-  background-color: #333; /* Set your preferred background color for the navbar */
-  padding: 10px;
-  position: fixed;
-}
 
-#navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#navbar li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-#navbar a {
-  text-decoration: none;
-  color: #fff; /* Set your preferred text color for the navbar links */
-  font-size: 16px;
-}
-
-#navbar a:hover {
-  color: #ff0000; /* Set your preferred hover text color for the navbar links */
-}
-
-/* Add CSS for the navbar */
-.nav-container {
-  position: fixed;
-  top: 155px; /* Adjust the top position to place the navbar below the header */
-  left: 0;
-  width: 100%;
-  height: auto;
-  background-color: #333;
-  padding: 10px;
-  z-index: 2; /* Ensure the navbar appears above the content */
-}
 
 ol {
   margin: auto;
@@ -171,15 +173,19 @@ main {
 }
 
 #profile-container {
-  display: flex; /* Enable flexbox to create two columns */
-  justify-content: space-between; /* Distribute columns evenly across the container */
-  margin-top: 165px;
+  display: flex;
+  justify-content: space-around;
 }
 
 #profile {
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.profile {
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
 }
 
 #profile img {
@@ -187,24 +193,7 @@ main {
   border: 5px solid rgb(135, 1, 1);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.66);
   width: 65%;
-}
-
-.profile-left-column {
-  flex: 1; /* Take up 1/3 of the container */
-  padding: 20px;
-  display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.profile-right-column {
-  flex: 2;
-  padding: 20px;
-  display: flex; /* Enable flexbox for the right column */
-  flex-direction: column; /* Stack elements vertically inside the right column */
-  justify-content: center; /* Center items horizontally */
+  margin-top: 160px;
 }
 
 #profile-header {
@@ -306,71 +295,13 @@ section {
   box-shadow: 2px 2px 10px#333;
 }
 
-#footer-position {
-  display: flex;
-  position: fixed;
-  bottom: -5px;
-}
-
-.footer-text {
-  color: rgb(0, 0, 0);
-  position: absolute;
-  bottom: 1px;
-  left: 600px;
-  text-align: center;
-  line-height: 10px;
-}
-
-.footer-style {
-  width: 100%;
-  border-top: 5px solid rgb(170, 1, 1);
-}
-body {
-     margin: 0;
-     padding: 0;
-   }
-   
-   /* Header styles */
-   header {
-     background-color: #333;
-     color: #fff;
-     padding: 20px;
-     text-align: center;
-   }
-   
-   header h1 {
-     margin: 0;
-     font-size: 24px;
-   }
-   
-   nav ul {
-     list-style: none;
-     padding: 0;
-     margin: 10px 0;
-   }
-   
-   nav li {
-     display: inline-block;
-     margin: 0 10px;
-   }
-   
-   nav a {
-     color: #fff;
-     text-decoration: none;
-   }
-   
-   /* Content styles */
-   section {
-     padding: 20px;
-   }
-   
    /* Footer styles */
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #333;
+  background-color: black;
   padding: 10px;
   border-top: 5px solid rgb(170, 1, 1);
 }
@@ -381,8 +312,8 @@ footer {
 }
 
 .footer-icons a {
-  margin: 10px;
-  color: #ffffff; /* Set the default color of the icons */
+  margin: 10px 30px 10px 30px;
+  color: rgb(255, 251, 246); /* Set the default color of the icons */
   transition: color 0.2s ease; /* Add a smooth transition effect */
 }
 

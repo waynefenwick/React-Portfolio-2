@@ -4,12 +4,12 @@ const Content = () => {
   return (
     <section>
       <div id="profile-container">
-        <div className="profile-left-column">
+        <div>
           <div id="profile">
-            <div src="../../assets/Profile Pic.png" className="profile-picture" alt="Profile Picture" />
+            <img src="../../assets/Profile Pic.png" className="profile-picture" alt="Profile Picture" />
           </div>
         </div>
-        <div className="profile-right-column">
+        <div  class="profile">
           <div id="profile-header">
             <h1><u>Personal Profile</u></h1>
           </div>
@@ -31,6 +31,7 @@ const Content = () => {
         </div>
       </div>
     </section>
+
   );
 };
 
