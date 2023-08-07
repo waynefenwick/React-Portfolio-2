@@ -174,7 +174,9 @@ main {
 
 #profile-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  background-color: #ffe8e8;
+  padding-bottom: 70px;
 }
 
 #profile {
@@ -183,17 +185,15 @@ main {
 }
 
 .profile {
-  align-items: center;
-  justify-content: center;
-  margin-top: 160px;
+  margin-top: 140px;
 }
 
 #profile img {
   border-radius: 50%;
   border: 5px solid rgb(135, 1, 1);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.66);
-  width: 65%;
-  margin-top: 160px;
+  width: 100%;
+  margin-top: 180px;
 }
 
 #profile-header {
@@ -208,8 +208,11 @@ h1, h3 {
 }
 
 #profile-list {
-  padding-left: 20px;
-  border-left: 5px solid rgb(170, 1, 1);
+  padding: 20px;
+  border: 3px solid rgb(170, 1, 1);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px gray;
+  background-color: white;
   line-height: 40px;
   font-size: 18px;
   display: flex; /* Enable flexbox for the profile list */

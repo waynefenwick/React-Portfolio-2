@@ -1,4 +1,6 @@
 import React from 'react';
+import profilePic from '../assets/Profile-Pic.png';
+
 
 const Content = () => {
   return (
@@ -6,7 +8,7 @@ const Content = () => {
       <div id="profile-container">
         <div>
           <div id="profile">
-            <img src="../../assets/Profile Pic.png" className="profile-picture" alt="Profile Picture" />
+          <img src={profilePic} className="profile-picture" alt="Profile Picture" />
           </div>
         </div>
         <div  class="profile">
