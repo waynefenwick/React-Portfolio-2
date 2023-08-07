@@ -232,7 +232,7 @@ a:link {
 /* Style for the contact form */
 .contact {
   background-color: #f2f2f2;
-  padding: 30px 0px 100px 0px;
+  padding: 30px 0px 30px 0px;
 }
 
 .container {
@@ -270,7 +270,7 @@ a:link {
 }
 
 button[type="submit"] {
-  background-color: #007bff;
+  background-color: black;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -280,7 +280,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color:  rgb(170, 1, 1);
 }
 
 /* Align form to the left with left margin */
@@ -303,6 +303,60 @@ button[type="submit"] {
 }
 
 
+
+/* Profiencies */
+.proficiencies {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+}
+
+.proficiencies .container {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.proficiencies h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.proficiencies p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.proficiencies a {
+  display: inline-block;
+  background-color: rgb(170, 1, 1);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.proficiencies a:hover {
+  background-color: black;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 65%;
+  height: 1375px;
+  border: 2px solid black;
+  margin: auto;
+  align-items: center;
+}
 
 
    /* Footer styles */

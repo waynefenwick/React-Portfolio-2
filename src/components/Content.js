@@ -85,6 +85,14 @@ const Content = () => {
           </form>
         </div>
       </section>
+
+      <section id="proficiencies" className="proficiencies">
+  <div className="resume-container">
+    <h1>My Resume</h1>
+    <a href="/path/to/your/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume (PDF)</a>
+    <iframe src="https://waynefenwick.github.io/Resume/" title="Wayne Fenwick Resume"></iframe>
+  </div>
+</section>
     </>
   );
 };

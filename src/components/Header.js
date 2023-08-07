@@ -6,7 +6,7 @@ const Header = () => {
     if (section) {
       const headerHeight = document.getElementById('top-header').offsetHeight;
       const scrollToPosition = section.offsetTop - headerHeight;
-      window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
+      window.scrollTo({ top: scrollToPosition });
     }
   };
 
@@ -19,7 +19,7 @@ const Header = () => {
         <li><a href="#">About Me</a></li>
         <li><a onClick={() => handleScrollToSection('portfolio-row')}>Portfolio</a></li>
         <li><a onClick={() => handleScrollToSection('contact')}>Contact</a></li>
-        <li><a href="https://waynefenwick.github.io/Resume/" target="_blank" rel="noreferrer">Resume</a></li>
+        <li><a onClick={() => handleScrollToSection('proficiencies')}>Resume</a></li>
       </ul>
     </header>
   );
