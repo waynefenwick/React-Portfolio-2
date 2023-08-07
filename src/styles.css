@@ -365,10 +365,28 @@ body {
    }
    
    /* Footer styles */
-   footer {
-     background-color: #333;
-     color: #fff;
-     padding: 10px;
-     text-align: center;
-   }
-   
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  border-top: 5px solid rgb(170, 1, 1);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons a {
+  margin: 10px;
+  color: #ffffff; /* Set the default color of the icons */
+  transition: color 0.2s ease; /* Add a smooth transition effect */
+}
+
+.footer-icons a:hover {
+  color: rgb(170, 1, 1); /* Set the color of the icons on hover */
+  filter: brightness(1.2); /* Add brightness to make it brighter on hover */
+}
