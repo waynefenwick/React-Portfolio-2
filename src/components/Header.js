@@ -4,26 +4,29 @@ const Header = () => {
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = document.getElementById('top-header').offsetHeight;
+      const scrollToPosition = section.offsetTop - headerHeight;
+      window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
     }
   };
 
   return (
-    <header>
+    <header id="top-header">
       <div className="flex-container">
         <h1>WAYNE FENWICK</h1>
       </div>
       <ul className="nav-container">
         <li><a href="#">About Me</a></li>
-        <li><a className="portfolio-link" onClick={() => handleScrollToSection('portfolio-row')}>Portfolio</a></li>
-        <li><a href="https://waynefenwick.github.io/Resume/" target="_blank" rel="noreferrer">Contact</a></li>
+        <li><a onClick={() => handleScrollToSection('portfolio-row')}>Portfolio</a></li>
+        <li><a onClick={() => handleScrollToSection('contact')}>Contact</a></li>
         <li><a href="https://waynefenwick.github.io/Resume/" target="_blank" rel="noreferrer">Resume</a></li>
       </ul>
-
     </header>
   );
 };
 
 export default Header;
+
+
 
 

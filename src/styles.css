@@ -102,7 +102,7 @@ h1, h3 {
   font-size: 18px;
 }
 
-/* Portfolio */
+
 .portfolio-list {
   position: relative;
 }
@@ -151,7 +151,12 @@ h1, h3 {
 
 
 a {
-  margin-right: 5px;
+  color: rgb(31, 136, 207);
+  margin-right: 3px;
+}
+
+a:hover {
+  color: rgb(0, 157, 255);
 }
 
 ol {
@@ -192,10 +197,15 @@ a:link {
   margin: 20px;
 }
 
+.portfolio {
+  /* Your other styles for the portfolio section */
+}
+
 .portfolio-row {
   display: flex;
   align-items: center;
 }
+
 
 .portfolio-row .portfolio-list {
   display: none;
@@ -216,6 +226,82 @@ a:link {
 .portfolio-row:hover .password-generator {
   transform: scale(1.05); /* Adjust the scale as needed */
 }
+
+
+
+/* Style for the contact form */
+.contact {
+  background-color: #f2f2f2;
+  padding: 30px 0px 100px 0px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Align form to the left with left margin */
+.form-group input,
+.form-group textarea,
+button[type="submit"] {
+  margin-left: 15px;
+}
+
+/* Add spacing between form components */
+.form-group {
+  padding-top: 15px;
+}
+
+.notification {
+  display: none;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
 
 
 
