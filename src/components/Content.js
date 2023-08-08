@@ -6,12 +6,32 @@ const Content = () => {
   useEffect(() => {
     const form = document.getElementById('contact-form');
     const messageInput = document.getElementById('message');
+    const emailInput = document.getElementById('email');
     const messageNotification = document.getElementById('message-notification');
+    const emailNotification = document.getElementById('email-notification');
 
     form.addEventListener('submit', (e) => {
+      let isValid = true;
+
       if (messageInput.value.trim() === '') {
         e.preventDefault();
         messageNotification.style.display = 'block';
+        isValid = false;
+      } else {
+        messageNotification.style.display = 'none';
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value.trim())) {
+        e.preventDefault();
+        emailNotification.style.display = 'block';
+        isValid = false;
+      } else {
+        emailNotification.style.display = 'none';
+      }
+
+      if (!isValid) {
+        e.preventDefault();
       }
     });
   }, []);
@@ -47,10 +67,11 @@ const Content = () => {
           </div>
         </div>
       </section>
+
       <section id="portfolio-row" className="portfolio">
         <div className="portfolio-row" id="password-generator">
           <img src={passwordGen} className="password-generator" alt="Password Generator" />
-          <div className="portfolio-right-column">
+          <div>
             <h1>Password Generator</h1>
             <ul className="portfolio-list">
               <li>Building on HTML & CSS with introduction to JavaScript</li>
@@ -62,6 +83,7 @@ const Content = () => {
           </div>
         </div>
       </section>
+
       <section id="contact" className="contact">
         <div className="container">
           <h1>Contact Me</h1>
@@ -73,6 +95,9 @@ const Content = () => {
             <div className="form-group">
               <label htmlFor="email" className="form-label">Email address</label>
               <input type="email" className="form-control" id="email" />
+              <div className="notification" id="email-notification">
+                Invalid email address.
+              </div>
             </div>
             <div className="form-group">
               <label htmlFor="message" className="form-label">Message</label>
@@ -87,12 +112,15 @@ const Content = () => {
       </section>
 
       <section id="proficiencies" className="proficiencies">
-  <div className="resume-container">
-    <h1>My Resume</h1>
-    <a href="/path/to/your/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume (PDF)</a>
-    <iframe src="https://waynefenwick.github.io/Resume/" title="Wayne Fenwick Resume"></iframe>
-  </div>
-</section>
+        <div className="resume-container">
+          <h1>My Resume</h1>
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume (PDF)</a>
+          <iframe
+            src="https://waynefenwick.github.io/Resume/"
+            title="Wayne Fenwick Resume"
+          ></iframe>
+        </div>
+      </section>
     </>
   );
 };

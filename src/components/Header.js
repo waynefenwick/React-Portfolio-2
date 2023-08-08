@@ -12,14 +12,14 @@ const Header = () => {
 
   return (
     <header id="top-header">
-      <div className="flex-container">
+      <div>
         <h1>WAYNE FENWICK</h1>
       </div>
       <ul className="nav-container">
-        <li><a href="#">About Me</a></li>
-        <li><a onClick={() => handleScrollToSection('portfolio-row')}>Portfolio</a></li>
-        <li><a onClick={() => handleScrollToSection('contact')}>Contact</a></li>
-        <li><a onClick={() => handleScrollToSection('proficiencies')}>Resume</a></li>
+        <li><a class="clicked" href="#">About Me</a></li>
+        <li><a class="clicked" onClick={() => handleScrollToSection('portfolio-row')}>Portfolio</a></li>
+        <li><a class="clicked" onClick={() => handleScrollToSection('contact')}>Contact</a></li>
+        <li><a class="clicked" onClick={() => handleScrollToSection('proficiencies')}>Resume</a></li>
       </ul>
     </header>
   );
