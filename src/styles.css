@@ -18,27 +18,24 @@ header {
   padding: 10px;
 }
 
-.top-header {
+#top-header {
   display: flex;
   justify-content: center;
-  margin: 10px 0px 10px 0px;
-  font-size: 35px;
+  margin: 10px 0;
+  font-size: 45px;
 }
 
-.nav-container {
-  justify-content: center;
-}
-
-header ul {
+#nav-container {
   display: flex;
   justify-content: center;
   list-style: none;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
   margin-bottom: 5px;
 }
 
-header li {
-  display: inline-block;
-  margin: 0 15px;
+#nav-container li {
+  margin: 0 10px; /* Add margin only between list items */
 }
 
 .clicked {
@@ -103,14 +100,14 @@ h1, h3 {
 
 
 /* Portfolio Items */
-.container {
+#container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  scroll-margin-top: 120px;
   width: auto;
-  height: 550px;
-  margin: 0 auto;
-  padding: 25px 20px 20px 20px;
+  height: 560px;
+  padding: 20px 20px 20px 20px;
 }
 
 .password-generator {
@@ -185,15 +182,20 @@ h1, h3 {
   height: 100%;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #333;
+  padding: 5px
+
 }
 
 
 /* Style for the contact form */
 .contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: #f2f2f2;
   padding: 60px 500px 30px 500px;
+  scroll-margin-top: 120px;
 }
-
 
 .container h1 {
   font-size: 24px;
@@ -263,6 +265,7 @@ button[type="submit"] {
 .proficiencies {
   background-color: #f2f2f2;
   padding: 40px 0;
+  scroll-margin-top: 120px;
 }
 
 .proficiencies .container {

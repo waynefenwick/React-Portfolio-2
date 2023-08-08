@@ -1,6 +1,13 @@
 import React, { useEffect } from 'react';
 import profilePic from '../assets/Profile-Pic.png';
 import passwordGen from '../assets/password-generator.png';
+import guessGame from '../assets/guess-game.png';
+import codingQuizz from '../assets/coding-quizz.png';
+import weather from '../assets/weather.png';
+import movieReviews from '../assets/movie-reviews.png';
+import bookshare from '../assets/bookshare.png';
+
+
 
 const Content = () => {
   useEffect(() => {
@@ -68,8 +75,8 @@ const Content = () => {
         </div>
       </section>
 
-      <div id="portfolio" class="container">
-      <section>
+    <div id="container">
+      <section id="portfolio">
         <div id="password-generator" class="rotate-container">
           <div class="rotate-card">
             <div class="rotate-card-inner">
@@ -93,23 +100,23 @@ const Content = () => {
         </div>
       </section>
 
-      <section>
+      <section id="portfolio">
         <div id="password-generator" class="rotate-container">
           <div class="rotate-card">
             <div class="rotate-card-inner">
               <div class="rotate-card-front">
-                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+                <img src={guessGame} class="password-generator" alt="Password Generator" />
               </div>
               <div class="rotate-card-back">
                 <div>
-                  <h1>Password Generator</h1>
+                  <h1>JavaScript Guess Game</h1>
                   <ul class="password-list">
-                    <li>Building on HTML & CSS with introduction to JavaScript</li>
-                    <li>Purpose was to build a password generator app</li>
-                    <li>I added the copy to clipboard option</li>
-                    <li>I also changed CSS design of starter code provided</li>
+                    <li>JavaScript has a lot of components</li>
+                    <li>Goal was to improve knowledge of JavaScript</li>
+                    <li>Built this game with JavaScript user interaction</li>
+                    <li>Helped improve CSS techniques</li>
                   </ul>
-                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                  <h4><a id="weblink" href="https://waynefenwick.github.io/Guess-Game/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
                 </div>
               </div>
             </div>
@@ -117,23 +124,23 @@ const Content = () => {
         </div>
       </section>
 
-      <section>
+      <section id="portfolio">
         <div id="password-generator" class="rotate-container">
           <div class="rotate-card">
             <div class="rotate-card-inner">
               <div class="rotate-card-front">
-                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+                <img src={codingQuizz} class="password-generator" alt="Password Generator" />
               </div>
               <div class="rotate-card-back">
                 <div>
-                  <h1>Password Generator</h1>
+                  <h1>Coding Quizz</h1>
                   <ul class="password-list">
                     <li>Building on HTML & CSS with introduction to JavaScript</li>
                     <li>Purpose was to build a password generator app</li>
                     <li>I added the copy to clipboard option</li>
                     <li>I also changed CSS design of starter code provided</li>
                   </ul>
-                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                  <h4><a id="weblink" href="https://waynefenwick.github.io/Coding-Quiz-Challenge/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
                 </div>
               </div>
             </div>
@@ -141,23 +148,23 @@ const Content = () => {
         </div>
       </section>
 
-      <section>
+      <section id="portfolio">
         <div id="password-generator" class="rotate-container">
           <div class="rotate-card">
             <div class="rotate-card-inner">
               <div class="rotate-card-front">
-                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+                <img src={weather} class="password-generator" alt="Password Generator" />
               </div>
               <div class="rotate-card-back">
                 <div>
-                  <h1>Password Generator</h1>
+                  <h1>Weather App</h1>
                   <ul class="password-list">
-                    <li>Building on HTML & CSS with introduction to JavaScript</li>
-                    <li>Purpose was to build a password generator app</li>
-                    <li>I added the copy to clipboard option</li>
-                    <li>I also changed CSS design of starter code provided</li>
+                  <li>First challenge integrating API data with deeper JavaScript coding</li>
+                  <li>Goal was to create a weather app where a user could select their own city</li>
+                  <li>Fully functional with data retrieval and localstorage</li>
+                  <li>Still needs tweaks on CSS styling and HTML structure </li>
                   </ul>
-                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                  <h4><a id="weblink" href="https://waynefenwick.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
                 </div>
               </div>
             </div>
@@ -165,23 +172,23 @@ const Content = () => {
         </div>
       </section>
 
-      <section>
+      <section id="portfolio">
         <div id="password-generator" class="rotate-container">
           <div class="rotate-card">
             <div class="rotate-card-inner">
               <div class="rotate-card-front">
-                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+                <img src={movieReviews} class="password-generator" alt="Password Generator" />
               </div>
               <div class="rotate-card-back">
                 <div>
-                  <h1>Password Generator</h1>
+                  <h1>Movie Reviews</h1>
                   <ul class="password-list">
-                    <li>Building on HTML & CSS with introduction to JavaScript</li>
-                    <li>Purpose was to build a password generator app</li>
-                    <li>I added the copy to clipboard option</li>
-                    <li>I also changed CSS design of starter code provided</li>
+                  <li>First project with other cohorts</li>
+                  <li>My focus was on HTML and CSS</li>
+                  <li>Involved API integration with further Javascript development</li>
+                  <li>Good exprience related to team building in coding context</li>
                   </ul>
-                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                  <h4><a id="weblink" href="https://fersill53.github.io/movie-reviews-and-gifs/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
                 </div>
               </div>
             </div>
@@ -189,31 +196,30 @@ const Content = () => {
         </div>
       </section>
 
-      <section>
+      <section id="portfolio">
         <div id="password-generator" class="rotate-container">
           <div class="rotate-card">
             <div class="rotate-card-inner">
               <div class="rotate-card-front">
-                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+                <img src={bookshare} class="password-generator" alt="Password Generator" />
               </div>
               <div class="rotate-card-back">
                 <div>
-                  <h1>Password Generator</h1>
+                  <h1>BookShare</h1>
                   <ul class="password-list">
-                    <li>Building on HTML & CSS with introduction to JavaScript</li>
-                    <li>Purpose was to build a password generator app</li>
-                    <li>I added the copy to clipboard option</li>
-                    <li>I also changed CSS design of starter code provided</li>
+                  <li>Second team project with other cohorts</li>
+                  <li>Introduction to handlebars</li>
+                  <li>Involved MySQL, Node.js, Express, ORM and MVC</li>
+                  <li>Gained experience in back-end coding including database operations</li>
                   </ul>
-                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                  <h4><a id="weblink" href="https://fathomless-stream-98788-44df48fe7ade.herokuapp.com/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      </div>
+    </div>
 
 
       <section id="contact" class="contact">

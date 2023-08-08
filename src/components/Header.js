@@ -5,22 +5,23 @@ const Header = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       const headerHeight = document.getElementById('top-header').offsetHeight;
-      const scrollToPosition = section.offsetTop - headerHeight;
-      window.scrollTo({ top: scrollToPosition });
+      const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      window.scrollTo({ top: sectionTop, behavior: 'smooth' });
     }
   };
+  
 
   return (
-    <header id="top-header">
+    <header>
       <div>
-        <h1>WAYNE FENWICK</h1>
+        <h1 id="top-header">WAYNE FENWICK</h1>
       </div>
-      <ul class="nav-container">
-        <li><a class="clicked" href="#">About Me</a></li>
-        <li><a class="clicked" onClick={() => handleScrollToSection('portfolio')}>Portfolio</a></li>
-        <li><a class="clicked" onClick={() => handleScrollToSection('contact')}>Contact</a></li>
-        <li><a class="clicked" onClick={() => handleScrollToSection('proficiencies')}>Resume</a></li>
-      </ul>
+      <ul id="nav-container">
+  <li><a className="clicked" href="#">About Me</a></li>
+  <li><a className="clicked" href="#container">Portfolio</a></li>
+  <li><a className="clicked" href="#contact">Contact</a></li>
+  <li><a className="clicked" href="#proficiencies">Resume</a></li>
+</ul>
     </header>
   );
 };
