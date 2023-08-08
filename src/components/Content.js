@@ -7,8 +7,6 @@ import weather from '../assets/weather.png';
 import movieReviews from '../assets/movie-reviews.png';
 import bookshare from '../assets/bookshare.png';
 
-
-
 const Content = () => {
   useEffect(() => {
     const form = document.getElementById('contact-form');
@@ -84,21 +82,26 @@ const Content = () => {
                 <img src={passwordGen} class="password-generator" alt="Password Generator" />
               </div>
               <div class="rotate-card-back">
-                <div>
-                  <h1>Password Generator</h1>
-                  <ul class="password-list">
-                    <li>Building on HTML & CSS with introduction to JavaScript</li>
-                    <li>Purpose was to build a password generator app</li>
-                    <li>I added the copy to clipboard option</li>
-                    <li>I also changed CSS design of starter code provided</li>
-                  </ul>
-                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                </div>
+              <div>
+                <h1>Password Generator</h1>
+                <ul class="password-list">
+                  <li>KEYWORDS: console.log, variable, array, functions, methods</li>
+                  <li>PURPOSE: build a password generator app</li>
+                  <li>INITIATIVE: added the copy to clipboard option</li>
+                  <li>GOING BEYOND: changed CSS design of starter code provided</li>
+                </ul>
+                <div class="card-links">
+                <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                <a href="https://github.com/waynefenwick/Password-Generator" target="_blank" rel="noreferrer">
+                  <i className="fab fa-github fa-2x"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
       <section id="portfolio">
         <div id="password-generator" class="rotate-container">
@@ -111,18 +114,23 @@ const Content = () => {
                 <div>
                   <h1>JavaScript Guess Game</h1>
                   <ul class="password-list">
-                    <li>JavaScript has a lot of components</li>
-                    <li>Goal was to improve knowledge of JavaScript</li>
-                    <li>Built this game with JavaScript user interaction</li>
-                    <li>Helped improve CSS techniques</li>
+                    <li>KEYWORDS: flex-box, responsive, typography, wire-frame, forms</li>
+                    <li>PURPOSE: increase html and css knowledge</li>
+                    <li>INITIATIVE: personally style my first portfolio</li>
+                    <li>GOING BEYOND: added more components than challenge presented</li>
                   </ul>
-                  <h4><a id="weblink" href="https://waynefenwick.github.io/Guess-Game/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                </div>
+                  <div class="card-links">
+                <h4><a id="weblink" href="https://waynefenwick.github.io/Guess-Game/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                <a href="https://github.com/waynefenwick/Guess-Game" target="_blank" rel="noreferrer">
+                  <i className="fab fa-github fa-2x"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
       <section id="portfolio">
         <div id="password-generator" class="rotate-container">
@@ -135,17 +143,22 @@ const Content = () => {
                 <div>
                   <h1>Coding Quizz</h1>
                   <ul class="password-list">
-                    <li>Building on HTML & CSS with introduction to JavaScript</li>
-                    <li>Purpose was to build a password generator app</li>
-                    <li>I added the copy to clipboard option</li>
-                    <li>I also changed CSS design of starter code provided</li>
+                    <li>KEYWORDS: DOM, timer, event listener, bubbling, storage</li>
+                    <li>PURPOSE: Understand APIs, Local storage, java functions</li>
+                    <li>INITIATIVE: personal design styling</li>
+                    <li>GOING BEYOND: added an extra two questions for the quizz</li>
                   </ul>
-                  <h4><a id="weblink" href="https://waynefenwick.github.io/Coding-Quiz-Challenge/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                </div>
+                  <div class="card-links">
+                <h4><a id="weblink" href="https://waynefenwick.github.io/Coding-Quiz-Challenge/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                <a href="https://github.com/waynefenwick/Coding-Quiz-Challenge" target="_blank" rel="noreferrer">
+                  <i className="fab fa-github fa-2x"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
       </section>
 
       <section id="portfolio">
@@ -159,17 +172,22 @@ const Content = () => {
                 <div>
                   <h1>Weather App</h1>
                   <ul class="password-list">
-                  <li>First challenge integrating API data with deeper JavaScript coding</li>
-                  <li>Goal was to create a weather app where a user could select their own city</li>
-                  <li>Fully functional with data retrieval and localstorage</li>
-                  <li>Still needs tweaks on CSS styling and HTML structure </li>
+                    <li>KEYWORDS: fetch, API, JSON, parse, network</li>
+                    <li>PURPOSE: learn how 3rd Party APIs work</li>
+                    <li>INITIATIVE: personal design styling of a weather app</li>
+                    <li>GOING BEYOND: extensive commitment of time</li>
                   </ul>
-                  <h4><a id="weblink" href="https://waynefenwick.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                </div>
+                  <div class="card-links">
+                <h4><a id="weblink" href="https://waynefenwick.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                <a href="https://github.com/waynefenwick/Weather-Dashboard" target="_blank" rel="noreferrer">
+                  <i className="fab fa-github fa-2x"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
       </section>
 
       <section id="portfolio">
@@ -182,18 +200,23 @@ const Content = () => {
               <div class="rotate-card-back">
                 <div>
                   <h1>Movie Reviews</h1>
-                  <ul class="password-list">
-                  <li>First project with other cohorts</li>
-                  <li>My focus was on HTML and CSS</li>
-                  <li>Involved API integration with further Javascript development</li>
-                  <li>Good exprience related to team building in coding context</li>
+                    <ul class="password-list">
+                    <li>KEYWORDS: teamwork, css framework, interactive, README</li>
+                    <li>PURPOSE: API intergration backed by full functionality</li>
+                    <li>INITIATIVE: styling and design</li>
+                    <li>GOING BEYOND: Extra time on styling</li>
                   </ul>
-                  <h4><a id="weblink" href="https://fersill53.github.io/movie-reviews-and-gifs/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                </div>
+                  <div class="card-links">
+                <h4><a id="weblink" href="https://fersill53.github.io/movie-reviews-and-gifs/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                <a href="https://github.com/Fersill53/movie-reviews-and-gifs" target="_blank" rel="noreferrer">
+                  <i className="fab fa-github fa-2x"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
       </section>
 
       <section id="portfolio">
@@ -207,20 +230,24 @@ const Content = () => {
                 <div>
                   <h1>BookShare</h1>
                   <ul class="password-list">
-                  <li>Second team project with other cohorts</li>
-                  <li>Introduction to handlebars</li>
-                  <li>Involved MySQL, Node.js, Express, ORM and MVC</li>
-                  <li>Gained experience in back-end coding including database operations</li>
+                    <li>KEYWORDS: handlebars, MySQL, Node.js, Express</li>
+                    <li>PURPOSE: Use Node.js and Express.js to create a RESTful API</li>
+                    <li>INITIATIVE: create design and folderstructure of project</li>
+                    <li>GOING BEYOND: Prepping presentation and showing some leadership</li>
                   </ul>
-                  <h4><a id="weblink" href="https://fathomless-stream-98788-44df48fe7ade.herokuapp.com/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                </div>
+                  <div class="card-links">
+                <h4><a id="weblink" href="https://fathomless-stream-98788-44df48fe7ade.herokuapp.com/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                <a href="https://github.com/waynefenwick/BookShare" target="_blank" rel="noreferrer">
+                  <i className="fab fa-github fa-2x"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
       </section>
     </div>
-
 
       <section id="contact" class="contact">
         <div>
