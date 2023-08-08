@@ -15,7 +15,7 @@ const Header = () => {
       <div>
         <h1>WAYNE FENWICK</h1>
       </div>
-      <ul className="nav-container">
+      <ul class="nav-container">
         <li><a class="clicked" href="#">About Me</a></li>
         <li><a class="clicked" onClick={() => handleScrollToSection('portfolio')}>Portfolio</a></li>
         <li><a class="clicked" onClick={() => handleScrollToSection('contact')}>Contact</a></li>

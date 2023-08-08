@@ -69,7 +69,6 @@ const Content = () => {
       </section>
 
       <div id="portfolio" class="container">
-
       <section>
         <div id="password-generator" class="rotate-container">
           <div class="rotate-card">
