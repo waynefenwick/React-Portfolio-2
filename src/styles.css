@@ -62,7 +62,7 @@ header li {
 }
 
 .profile {
-  margin-top: 170px;
+  margin-top: 140px;
 }
 
 #profile img {
@@ -70,7 +70,7 @@ header li {
   border: 5px solid rgb(135, 1, 1);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.66);
   width: 100%;
-  margin-top: 210px;
+  margin-top: 190px;
 }
 
 #profile-header {
@@ -99,29 +99,98 @@ h1, h3 {
 
 
 /* Portfolio Items */
-
-.password-generator {
-  position: static;
-  border-right: 5px solid rgb(170, 1, 1);
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px#333;
-  margin: 40px;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+.password-generator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* Change to relative */
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #333;
+margin: 20px
+}
+
+.password-list {
+  font-size: medium;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.rotate-container {
+  perspective: 1000px;
+}
+
+.rotate-card {
+  width: 400px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate-card-inner {
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  transform-origin: center center; /* Set the transformation origin to center */
+}
+
+.rotate-container:hover .rotate-card-inner {
+  transform: rotateY(180deg); /* Rotate on central vertical axis */
+}
+
+.rotate-card-front,
+.rotate-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.rotate-card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(0deg); /* Initial rotation */
+}
+
+.rotate-card-back {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  transform: rotateY(180deg); /* Rotate on central vertical axis */
+  justify-content: center;
+  text-align: center;
+  position: relative; /* Change to absolute */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #333;
+margin: 20px;
+}
 
 
 /* Style for the contact form */
 .contact {
   background-color: #f2f2f2;
-  padding: 30px 0px 30px 0px;
+  padding: 30px 500px 30px 500px;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 .container h1 {
   font-size: 24px;

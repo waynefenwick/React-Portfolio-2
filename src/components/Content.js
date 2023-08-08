@@ -68,24 +68,157 @@ const Content = () => {
         </div>
       </section>
 
-      <section id="portfolio-row" className="portfolio">
-        <div className="portfolio-row" id="password-generator">
-          <img src={passwordGen} className="password-generator" alt="Password Generator" />
-          <div>
-            <h1>Password Generator</h1>
-            <ul className="portfolio-list">
-              <li>Building on HTML & CSS with introduction to JavaScript</li>
-              <li>Purpose was to build a password generator app</li>
-              <li>I added the copy to clipboard option</li>
-              <li>I also changed CSS design of starter code provided</li>
-            </ul>
-            <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+      <div id="portfolio" class="container">
+
+      <section>
+        <div id="password-generator" class="rotate-container">
+          <div class="rotate-card">
+            <div class="rotate-card-inner">
+              <div class="rotate-card-front">
+                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+              </div>
+              <div class="rotate-card-back">
+                <div>
+                  <h1>Password Generator</h1>
+                  <ul class="password-list">
+                    <li>Building on HTML & CSS with introduction to JavaScript</li>
+                    <li>Purpose was to build a password generator app</li>
+                    <li>I added the copy to clipboard option</li>
+                    <li>I also changed CSS design of starter code provided</li>
+                  </ul>
+                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" className="contact">
-        <div className="container">
+      <section>
+        <div id="password-generator" class="rotate-container">
+          <div class="rotate-card">
+            <div class="rotate-card-inner">
+              <div class="rotate-card-front">
+                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+              </div>
+              <div class="rotate-card-back">
+                <div>
+                  <h1>Password Generator</h1>
+                  <ul class="password-list">
+                    <li>Building on HTML & CSS with introduction to JavaScript</li>
+                    <li>Purpose was to build a password generator app</li>
+                    <li>I added the copy to clipboard option</li>
+                    <li>I also changed CSS design of starter code provided</li>
+                  </ul>
+                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="password-generator" class="rotate-container">
+          <div class="rotate-card">
+            <div class="rotate-card-inner">
+              <div class="rotate-card-front">
+                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+              </div>
+              <div class="rotate-card-back">
+                <div>
+                  <h1>Password Generator</h1>
+                  <ul class="password-list">
+                    <li>Building on HTML & CSS with introduction to JavaScript</li>
+                    <li>Purpose was to build a password generator app</li>
+                    <li>I added the copy to clipboard option</li>
+                    <li>I also changed CSS design of starter code provided</li>
+                  </ul>
+                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="password-generator" class="rotate-container">
+          <div class="rotate-card">
+            <div class="rotate-card-inner">
+              <div class="rotate-card-front">
+                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+              </div>
+              <div class="rotate-card-back">
+                <div>
+                  <h1>Password Generator</h1>
+                  <ul class="password-list">
+                    <li>Building on HTML & CSS with introduction to JavaScript</li>
+                    <li>Purpose was to build a password generator app</li>
+                    <li>I added the copy to clipboard option</li>
+                    <li>I also changed CSS design of starter code provided</li>
+                  </ul>
+                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="password-generator" class="rotate-container">
+          <div class="rotate-card">
+            <div class="rotate-card-inner">
+              <div class="rotate-card-front">
+                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+              </div>
+              <div class="rotate-card-back">
+                <div>
+                  <h1>Password Generator</h1>
+                  <ul class="password-list">
+                    <li>Building on HTML & CSS with introduction to JavaScript</li>
+                    <li>Purpose was to build a password generator app</li>
+                    <li>I added the copy to clipboard option</li>
+                    <li>I also changed CSS design of starter code provided</li>
+                  </ul>
+                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="password-generator" class="rotate-container">
+          <div class="rotate-card">
+            <div class="rotate-card-inner">
+              <div class="rotate-card-front">
+                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+              </div>
+              <div class="rotate-card-back">
+                <div>
+                  <h1>Password Generator</h1>
+                  <ul class="password-list">
+                    <li>Building on HTML & CSS with introduction to JavaScript</li>
+                    <li>Purpose was to build a password generator app</li>
+                    <li>I added the copy to clipboard option</li>
+                    <li>I also changed CSS design of starter code provided</li>
+                  </ul>
+                  <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      </div>
+
+
+      <section id="contact" class="contact">
+        <div>
           <h1>Contact Me</h1>
           <form id="contact-form">
             <div className="form-group">
