@@ -29,54 +29,49 @@ header {
   font-size: 45px;
 }
 
+
+
 #nav-container {
   display: flex;
+  align-items: center;
+}
+
+#nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
-#nav-container li {
-  margin-right: 20px; /* Adjust the spacing between menu items */
-  position: relative;
+#nav-list li {
+  margin-right: 20px;
   font-size: 20px;
+  position: relative;
+  font-weight: bold;
 }
 
-#nav-container li:first-child {
-  margin-left: 0; /* Remove margin from the first menu item */
-}
-
-#nav-container li:last-child {
-  margin-right: 0; /* Remove margin from the last menu item */
-}
-
-#nav-container li a {
+#nav-list li a {
   display: inline-block;
   padding: 5px 30px;
   text-decoration: none;
-  color: #dddddd; /* Set the text color */
-  position: relative; /* Add relative positioning to the menu items */
+  color: #dddddd;
+  position: relative;
 }
 
-#nav-container li a:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0px; /* Adjust the position of the vertical line */
-  transform: translateY(-50%);
-  width: 3px;
-  height: 70%; /* Adjust the height of the line */
-  background-color: #ececec; /* Set the color of the vertical line */
+#nav-list li::after {
+  content: " | ";
+  color: #dddddd;
+  font-weight: bold;
 }
 
-#nav-container li:first-child a:before {
-  display: none; /* Hide the vertical line for the first menu item */
+#nav-list li:last-child::after {
+  content: none;
 }
 
-#nav-container li a.active,
-#nav-container li a:hover,
-#nav-container li a:focus {
-  color: rgb(170, 1, 1); /* Set the red color on hover and focus */
+#nav-list li a:hover,
+#nav-list li:focus-within a {
+  color: rgb(170, 1, 1);
+  transition: color 0.2s ease, box-shadow 0.2s ease;
 }
 
 
@@ -141,6 +136,10 @@ h1, h3 {
   width: auto;
   height: 560px;
   padding: 20px 20px 20px 20px;
+}
+
+.orange-icon {
+  color: rgb(255, 77, 0);
 }
 
 .card-links {
@@ -392,36 +391,29 @@ button[type="submit"] {
 .proficiency-box ul {
   list-style: none;
   padding: 0;
-  display: flex; /* Display the list items horizontally */
-  flex-wrap: wrap; /* Allow wrapping to multiple lines if necessary */
-  margin: 0; /* Remove default margin */
-  padding-left: 0; /* Remove default left padding */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
 }
 
 .proficiency-box li {
-  margin-right: 20px; /* Add spacing between list items */
+  margin-right: 20px;
   margin-bottom: 5px;
 }
 
 .proficiency-box li::after {
-  content: " | "; /* Use any separator you prefer */
+  content: " | ";
   color: rgb(170, 1, 1);
-  margin-left: 5px; /* Adjust spacing between items and separator */
+  margin-left: 5px;
 }
 
-/* Remove separator from the last item */
 .proficiency-box li:last-child::after {
   content: none;
 }
 
 
-/* Rest of your existing styles... */
-
-.proficiencies a:hover {
-  background-color: black;
-}
-
-
+/* Resume */
 .resume-container {
   display: flex;
   flex-direction: column;
@@ -438,7 +430,7 @@ iframe {
 }
 
 
-   /* Footer styles */
+/* Footer */
 footer {
   position: fixed;
   left: 0;

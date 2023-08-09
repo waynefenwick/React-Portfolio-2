@@ -15,9 +15,7 @@ Potential employers are looking for candidates with experience building single-p
 ## Table of Contents
 
  * [Installation](#installation)
- * [Usage](#usage)
  * [Media](#media)
- * [Testing](#testing)
  * [Contribution](#contribution)
  
 
@@ -25,39 +23,9 @@ Potential employers are looking for candidates with experience building single-p
 
 ## Installation
 
-There are several steps involved. The most important are to make sure you establish reliable and smooth flowing access to your mySQL account as well as the abiltiy to quickly and easily open a local port on your PC in order to use Insomnia effectively.
+You’ll deploy this application to GitHub Pages. Follow the instructions in the Git Guide or consult the [Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create a build that you can deploy.
 
-1. Make sure you have [Node.js](https://nodejs.org/en) installed.
-2. Install the following NPM modules on your root directory:
-     * dotenv: 8.6.0
-     * express: 4.18.2
-     * mysql2: 2.3.3
-     * sequelize: 6.32.0
-3. Clone this repo to your machine.
-4. Open .env and enter your database name and mySQL login crendentials.
-5. Open a terminal on the project folder
-    * Login: mysql -p (your password)
-        * Type in 'SHOW DATABASES;' to see any databases in your account
-        * Type in 'DROP DATABASE databasename_db;' to delete a database
-        * Type in 'CREATE DATABASE databasename_db;' to create a database
-        * Type in 'SHOW DATABASES;' to verify the database was successfully created
-        * Quit mysql with 'quit;'
-6 Open a terminal on the seeds folder
-    * Type in ’npm run seed’ to seed the database
-7. Open a terminal on the server.js file and type in ’npm start’ to start the server
-8. You will now be ready to use [Insomnia](https://insomnia.rest/download) to test API routes you have created.
-9. There is a video link below to give you an overview how Insomnia works in testing API routes.
-
-
-&nbsp;
-
-[Table of Contents](#table-of-contents)
-
-
-
-## Usage
-
-See the video
+**Important**: Be sure to push your codebase to the default branch in GitHub -- NOT your built and deployed code. Ensure this happens by using the `gh-pages` branch to host the deployed application's build.
 
 
 &nbsp;
@@ -67,32 +35,18 @@ See the video
 
 
 ## Media
-_A brief overview of the Insomnia build_
+_A brief overview of my Portfolio_
 &nbsp;
 
 
-![Media](./media/media_screenshot.png)
-
-* Visit [Full Media](https://drive.google.com/file/d/1DkHJtfiQkxQ5bsglmH0z2loxhrPzHSFu/view?usp=sharing) to see more details
-
+![Media](./src/media/about-me.png)
 
 &nbsp;
 
-[Table of Contents](#table-of-contents)
+![Media](./src/media/portfolio.png)
 
 
-
-## Testing
-
-Testing of these APIs or one that you create can be done through Insomnia or Postman.
-
-&nbsp;
-
-[Table of Contents](#table-of-contents)
-
-
-
-## Contribution
+* Visit [Full Media Video](https://drive.google.com/file/d/1_XdsLhUysmf0ss8smtZCfNRNTKT_JprZ/view?usp=sharing) to see more details
 
 
 &nbsp;

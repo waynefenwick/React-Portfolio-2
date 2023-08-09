@@ -274,7 +274,10 @@ const Content = () => {
 
       <section id="contact" class="contact">
         <div>
-          <h1 id="contactMe">Contact Me</h1>
+        <h1 id="contactMe">
+      Contact Me
+      <span class="orange-icon">(</span><i class="fas fa-exclamation-triangle orange-icon"></i><span class="orange-icon">)</span>
+    </h1>
           <form id="contact-form">
             <div className="form-group">
               <label htmlFor="name" className="form-label">Name</label>
@@ -301,27 +304,22 @@ const Content = () => {
 
 
       <section id="proficiencies" className="proficiencies">
-  <div className="resume-container">
-    <h1>Proficiencies</h1>
-    <div class="proficiency-box">
-      <b><ul class="proficiency-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Bulldogging</li>
-        <li>Project Management</li>
-        <li>UI/UX</li>
-        <li>Debugging</li>
-      </ul></b>
-    </div>
-    <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume (PDF)</a>
-    <iframe
-      src="https://waynefenwick.github.io/Resume/"
-      title="Wayne Fenwick Resume"
-    ></iframe>
-  </div>
-</section>
-
-
+        <div className="resume-container">
+          <h1>Proficiencies</h1>
+            <div class="proficiency-box">
+              <b><ul class="proficiency-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bulldogging</li>
+                <li>Project Management</li>
+                <li>UI/UX</li>
+                <li>Debugging</li>
+              </ul></b>
+            </div>
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume (PDF)</a>
+            <iframe src="https://waynefenwick.github.io/Resume/" title="Wayne Fenwick Resume"></iframe>
+        </div>
+      </section>
     </>
   );
 };
