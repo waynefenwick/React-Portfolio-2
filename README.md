@@ -1,162 +1,117 @@
-# 20 React: React Portfolio
+# 20-React-Portfolio
 
-## Your Task
+## License
+[![License Badge](https://img.shields.io/badge/license-mit-green?style=plastic)](https://choosealicense.com/licenses/mit/)&nbsp;
 
-Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
+* Select the badge to see details.
+* To see more about license badges, visit [Shields IO](https://shields.io/category/license)
 
-Your task is to create a portfolio using your new React skills, which will help set you apart from other developers whose portfolios don’t use the latest technologies. 
+&nbsp;
 
-You’ll deploy this application to GitHub Pages. Follow the instructions in the Git Guide or consult the [Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create a build that you can deploy.
+## Description
+Potential employers are looking for candidates with experience building single-page applications. I created this portfolio using React. It contains a short Life experience Profile, application samples of work I have done up to this point, a contact form as well as a brief view of my proficiencies in coding along with an option to download my Resume.
+&nbsp;
 
-**Important**: Be sure to push your codebase to the default branch in GitHub -- NOT your built and deployed code. Ensure this happens by using the `gh-pages` branch to host the deployed application's build.
+## Table of Contents
 
-## User Story
+ * [Installation](#installation)
+ * [Usage](#usage)
+ * [Media](#media)
+ * [Testing](#testing)
+ * [Contribution](#contribution)
+ 
 
-```md
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
-```
+&nbsp;
 
-## Acceptance Criteria
+## Installation
 
-```md
-GIVEN a single-page application portfolio for a web developer
-WHEN I load the portfolio
-THEN I am presented with a page containing a header, a section for content, and a footer
-WHEN I view the header
-THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
-WHEN I view the navigation titles
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
-WHEN I click on a navigation title
-THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
-WHEN I load the portfolio the first time
-THEN the About Me title and section are selected by default
-WHEN I am presented with the About Me section
-THEN I see a recent photo or avatar of the developer and a short bio about them
-WHEN I am presented with the Portfolio section
-THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
-WHEN I am presented with the Contact section
-THEN I see a contact form with fields for a name, an email address, and a message
-WHEN I move my cursor out of one of the form fields without entering text
-THEN I receive a notification that this field is required
-WHEN I enter text into the email address field
-THEN I receive a notification if I have entered an invalid email address
-WHEN I am presented with the Resume section
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-WHEN I view the footer
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
-```
+There are several steps involved. The most important are to make sure you establish reliable and smooth flowing access to your mySQL account as well as the abiltiy to quickly and easily open a local port on your PC in order to use Insomnia effectively.
 
-## Mock-Up
+1. Make sure you have [Node.js](https://nodejs.org/en) installed.
+2. Install the following NPM modules on your root directory:
+     * dotenv: 8.6.0
+     * express: 4.18.2
+     * mysql2: 2.3.3
+     * sequelize: 6.32.0
+3. Clone this repo to your machine.
+4. Open .env and enter your database name and mySQL login crendentials.
+5. Open a terminal on the project folder
+    * Login: mysql -p (your password)
+        * Type in 'SHOW DATABASES;' to see any databases in your account
+        * Type in 'DROP DATABASE databasename_db;' to delete a database
+        * Type in 'CREATE DATABASE databasename_db;' to create a database
+        * Type in 'SHOW DATABASES;' to verify the database was successfully created
+        * Quit mysql with 'quit;'
+6 Open a terminal on the seeds folder
+    * Type in ’npm run seed’ to seed the database
+7. Open a terminal on the server.js file and type in ’npm start’ to start the server
+8. You will now be ready to use [Insomnia](https://insomnia.rest/download) to test API routes you have created.
+9. There is a video link below to give you an overview how Insomnia works in testing API routes.
 
-The following animation shows the web application's appearance and functionality:
 
-![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](./Assets/20-react-homework-demo-01.gif)
+&nbsp;
 
-## Getting Started
+[Table of Contents](#table-of-contents)
 
-You’ll use `create-react-app` to build your portfolio, which will include the following:
 
-* A single `Header` component that appears on multiple pages
 
-* A single `Navigation` component within the header that will be used to conditionally render the different sections of your portfolio
+## Usage
 
-* A single `Project` component that will be used multiple times in the Portfolio section
+See the video
 
-* A single `Footer` component that appears on multiple pages
 
-**Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
+&nbsp;
 
-### Projects
+[Table of Contents](#table-of-contents)
 
-For each project that is featured in your portfolio, include the following:
 
-* An image of the deployed application (either a short animated GIF or screenshot)
 
-* The title of the project
+## Media
+_A brief overview of the Insomnia build_
+&nbsp;
 
-* A link to the deployed application
 
-* A link to the corresponding GitHub repository
+![Media](./media/media_screenshot.png)
 
-### Design
+* Visit [Full Media](https://drive.google.com/file/d/1DkHJtfiQkxQ5bsglmH0z2loxhrPzHSFu/view?usp=sharing) to see more details
 
-As with the previous portfolio Challenge, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
 
-* Use mobile-first design.
+&nbsp;
 
-* Choose a color palette that distinguishes your site from the default Bootstrap theme and unstyled HTML sites. Refer to resources like [Coolors](https://coolors.co/) or another color scheme generator to help you create something that will stand out.
+[Table of Contents](#table-of-contents)
 
-* Ensure that the font size is large enough to read and that the colors don't cause eye strain.
 
-* Consider using animations and React component libraries. Note that this will not affect your grade, but it might impact how potential employers gauge your knowledge.
 
-## Grading Requirements
+## Testing
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+Testing of these APIs or one that you create can be done through Insomnia or Postman.
 
-This Challenge is graded based on the following criteria:
+&nbsp;
 
-### Technical Acceptance Criteria: 40%
+[Table of Contents](#table-of-contents)
 
-* Satisfies all of the preceding acceptance criteria plus the following:
 
-    * Application must use React to render content.
 
-    * Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
+## Contribution
 
-    * Application has a single `Project` component that’s used multiple times in the Portfolio section.
 
-    * Application has a single `Footer` component that appears on multiple pages.
+&nbsp;
 
-    * Application must be deployed to GitHub Pages.
+[Table of Contents](#table-of-contents)
 
-### Deployment: 32%
 
-* Application deployed at live URL.
 
-* Application loads with no errors.
+## Questions
 
-* Application GitHub URL submitted.
+_If you have any questions, please feel free to contact me._
 
-* GitHub repository contains application code.
+GitHub Username: [waynefenwick](https://github.com/waynefenwick)
 
-### Application Quality: 15%
+Email Address: <a href="mailto:waynefenwick@gmail.com">waynefenwick@gmail.com</a>
 
-* User experience is intuitive and easy to navigate.
+&nbsp;
 
-* User interface style is clean and polished.
+_Thanks for taking time to visit this repository!_
 
-* Application uses a color scheme other than the default Bootstrap color palette.
+[Back to Top](#)
 
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains high-quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
