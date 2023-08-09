@@ -4,6 +4,7 @@ body {
   overflow:hidden;
 }
 
+
 /* Header */
 header {
   display: flex;
@@ -28,7 +29,6 @@ header {
   font-size: 45px;
 }
 
-
 #nav-container {
   display: flex;
   list-style: none;
@@ -39,6 +39,7 @@ header {
 #nav-container li {
   margin-right: 20px; /* Adjust the spacing between menu items */
   position: relative;
+  font-size: 20px;
 }
 
 #nav-container li:first-child {
@@ -72,6 +73,7 @@ header {
   display: none; /* Hide the vertical line for the first menu item */
 }
 
+#nav-container li a.active,
 #nav-container li a:hover,
 #nav-container li a:focus {
   color: rgb(170, 1, 1); /* Set the red color on hover and focus */
@@ -94,7 +96,7 @@ header {
 }
 
 .profile {
-  margin-top: 140px;
+  margin-top: 160px;
 }
 
 #profile img {
@@ -253,6 +255,7 @@ h1, h3 {
   border-radius: 5px;
   box-shadow: 2px 2px 10px #333;
   margin: 60px 400px 30px 400px;
+  align-items: left; /* Vertically align the form content */
 }
 
 #contactMe {
@@ -289,7 +292,7 @@ h1, h3 {
 }
 
 button[type="submit"] {
-  background-color: black;
+  background-color: rgb(170, 1, 1);
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -299,7 +302,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color:  rgb(170, 1, 1);
+  background-color:  black;
 }
 
 /* Align form to the left with left margin */
@@ -321,13 +324,27 @@ button[type="submit"] {
   margin-top: 5px;
 }
 
+/* Style for the Thank you message */
+.thank-you-message {
+  background-color: #000000;
+  color: white;
+  padding: 9px;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block; /* Display the message inline */
+  vertical-align: middle; /* Align the message vertically */
+  margin-left: 10px; /* Add some spacing between the button and the message */
+}
+
+
+
 
 
 /* Profiencies */
 .proficiencies {
   background-color: #f2f2f2;
   padding: 40px 0;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 135px;
 }
 
 .proficiencies .container {
@@ -338,7 +355,7 @@ button[type="submit"] {
 }
 
 .proficiencies h1 {
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
@@ -356,12 +373,54 @@ button[type="submit"] {
   border-radius: 4px;
   font-size: 16px;
   text-decoration: none;
-  margin: 15px;
+  margin: 25px;
 }
+
+.proficiency-box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 2px solid rgb(170, 1, 1);
+  border-radius: 5px;
+  margin: 30px;
+}
+
+.proficiency-box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.proficiency-box ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Display the list items horizontally */
+  flex-wrap: wrap; /* Allow wrapping to multiple lines if necessary */
+  margin: 0; /* Remove default margin */
+  padding-left: 0; /* Remove default left padding */
+}
+
+.proficiency-box li {
+  margin-right: 20px; /* Add spacing between list items */
+  margin-bottom: 5px;
+}
+
+.proficiency-box li::after {
+  content: " | "; /* Use any separator you prefer */
+  color: rgb(170, 1, 1);
+  margin-left: 5px; /* Adjust spacing between items and separator */
+}
+
+/* Remove separator from the last item */
+.proficiency-box li:last-child::after {
+  content: none;
+}
+
+
+/* Rest of your existing styles... */
 
 .proficiencies a:hover {
   background-color: black;
 }
+
 
 .resume-container {
   display: flex;

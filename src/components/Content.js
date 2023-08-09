@@ -10,36 +10,56 @@ import bookshare from '../assets/bookshare.png';
 const Content = () => {
   useEffect(() => {
     const form = document.getElementById('contact-form');
+    const nameInput = document.getElementById('name');
     const messageInput = document.getElementById('message');
     const emailInput = document.getElementById('email');
     const messageNotification = document.getElementById('message-notification');
     const emailNotification = document.getElementById('email-notification');
-
+  
+    const resetFormFields = () => {
+      nameInput.value = '';
+      emailInput.value = '';
+      messageInput.value = '';
+    };
+  
     form.addEventListener('submit', (e) => {
+      e.preventDefault();
+  
       let isValid = true;
-
+  
       if (messageInput.value.trim() === '') {
-        e.preventDefault();
         messageNotification.style.display = 'block';
         isValid = false;
       } else {
         messageNotification.style.display = 'none';
       }
-
+  
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(emailInput.value.trim())) {
-        e.preventDefault();
         emailNotification.style.display = 'block';
         isValid = false;
       } else {
         emailNotification.style.display = 'none';
       }
-
-      if (!isValid) {
-        e.preventDefault();
+  
+      if (isValid) {
+        // Display thank you message
+        const thankYouMessage = document.createElement('div');
+        thankYouMessage.textContent = 'Thank you! I will be back in contact with you!';
+        thankYouMessage.classList.add('thank-you-message');
+        form.appendChild(thankYouMessage);
+  
+        // Reset form fields after 3 seconds
+        setTimeout(() => {
+          thankYouMessage.remove();
+          resetFormFields();
+        }, 3000);
       }
     });
   }, []);
+  
+  
+  
 
   return (
     <>
@@ -51,11 +71,12 @@ const Content = () => {
             </div>
           </div>
           <div className="profile">
+
+            <br />
+            <div id="profile-list">
             <div id="profile-header">
               <h1><u>Personal Profile</u></h1>
             </div>
-            <br />
-            <div id="profile-list">
               <h3>
                 <ul>
                   <li>Born and raised in South Africa</li>
@@ -250,6 +271,7 @@ const Content = () => {
   </section>
 </div>
 
+
       <section id="contact" class="contact">
         <div>
           <h1 id="contactMe">Contact Me</h1>
@@ -277,16 +299,29 @@ const Content = () => {
         </div>
       </section>
 
+
       <section id="proficiencies" className="proficiencies">
-        <div className="resume-container">
-          <h1>My Resume</h1>
-          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download>Download (PDF)</a>
-          <iframe
-            src="https://waynefenwick.github.io/Resume/"
-            title="Wayne Fenwick Resume"
-          ></iframe>
-        </div>
-      </section>
+  <div className="resume-container">
+    <h1>Proficiencies</h1>
+    <div class="proficiency-box">
+      <b><ul class="proficiency-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bulldogging</li>
+        <li>Project Management</li>
+        <li>UI/UX</li>
+        <li>Debugging</li>
+      </ul></b>
+    </div>
+    <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume (PDF)</a>
+    <iframe
+      src="https://waynefenwick.github.io/Resume/"
+      title="Wayne Fenwick Resume"
+    ></iframe>
+  </div>
+</section>
+
+
     </>
   );
 };
