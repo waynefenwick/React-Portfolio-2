@@ -1,11 +1,6 @@
 import React, { useEffect } from 'react';
 import profilePic from '../assets/Profile-Pic.png';
-import passwordGen from '../assets/password-generator.png';
-import guessGame from '../assets/guess-game.png';
-import codingQuizz from '../assets/coding-quizz.png';
-import weather from '../assets/weather.png';
-import movieReviews from '../assets/movie-reviews.png';
-import bookshare from '../assets/bookshare.png';
+import projects from './projectData'; // Import the projects data
 
 const Content = () => {
   useEffect(() => {
@@ -59,217 +54,226 @@ const Content = () => {
   }, []);
   
   
-  
-
   return (
     <>
-      <section>
-        <div id="profile-container">
-          <div>
-            <div id="profile">
-              <img src={profilePic} className="profile-picture" alt="Profile Picture" />
-            </div>
-          </div>
-          <div className="profile">
-
-            <br />
-            <div id="profile-list">
-            <div id="profile-header">
-              <h1><u>Personal Profile</u></h1>
-            </div>
-              <h3>
-                <ul>
-                  <li>Born and raised in South Africa</li>
-                  <li>Am a naturalized American</li>
-                  <li>Have a certificate in coding through UT Austin</li>
-                  <li>Accrued numerous transferable skills</li>
-                  <li>Extensive Project Management experience</li>
-                  <li>BA in communication; MA in counseling</li>
-                  <li>German and Turkish international experience</li>
-                  <li>Am an avid and competitive cyclist</li>
-                </ul>
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <div id="container">
-      <section id="portfolio">
-        <div id="password-generator" class="rotate-container">
-          <div class="rotate-card">
-            <div class="rotate-card-inner">
-              <div class="rotate-card-front">
-                <img src={passwordGen} class="password-generator" alt="Password Generator" />
+    <section id="portfolio">
+      {projects.map(project => (
+        <div key={project.id} className="rotate-container">
+          <div className="rotate-card">
+            <div className="rotate-card-inner">
+              <div className="rotate-card-front">
+                <img src={project.image} className="password-generator" alt={project.title} />
               </div>
-              <div class="rotate-card-back">
-              <div>
-                <h1>Password Generator</h1>
-                <ul class="password-list">
-                  <li><b>KEYWORDS:</b> console.log, variable, array, functions, methods</li>
-                  <li><b>PURPOSE:</b> build a password generator app</li>
-                  <li><b>INITIATIVE:</b> added the copy to clipboard option</li>
-                  <li><b>GOING BEYOND:</b> changed CSS design of starter code provided</li>
-                </ul>
-                <div class="card-links">
-                <h4><a id="weblink" href="https://waynefenwick.github.io/Password-Generator/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                <a href="https://github.com/waynefenwick/Password-Generator" target="_blank" rel="noreferrer">
-                  <i className="fab fa-github fa-2x"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-      <section id="portfolio">
-        <div id="password-generator" class="rotate-container">
-          <div class="rotate-card">
-            <div class="rotate-card-inner">
-              <div class="rotate-card-front">
-                <img src={guessGame} class="password-generator" alt="Password Generator" />
-              </div>
-              <div class="rotate-card-back">
+              <div className="rotate-card-back">
                 <div>
-                  <h1>JavaScript Guess Game</h1>
-                  <ul class="password-list">
-                    <li><b>KEYWORDS:</b> flex-box, responsive, typography, wire-frame, forms</li>
-                    <li><b>PURPOSE:</b> increase html and css knowledge</li>
-                    <li><b>INITIATIVE:</b> personally style my first portfolio</li>
-                    <li><b>GOING BEYOND:</b> added more components than challenge presented</li>
+                  <h1>{project.title}</h1>
+                  <ul className="password-list">
+                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
+                    <li><b>PURPOSE:</b> {project.purpose}</li>
+                    <li><b>INITIATIVE:</b> {project.initiative}</li>
+                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
                   </ul>
-                  <div class="card-links">
-                <h4><a id="weblink" href="https://waynefenwick.github.io/Guess-Game/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                <a href="https://github.com/waynefenwick/Guess-Game" target="_blank" rel="noreferrer">
-                  <i className="fab fa-github fa-2x"></i>
-                </a>
+                  <div className="card-links">
+                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                      <i className="fab fa-github fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      ))}
+    </section>
 
-      <section id="portfolio">
-        <div id="password-generator" class="rotate-container">
-          <div class="rotate-card">
-            <div class="rotate-card-inner">
-              <div class="rotate-card-front">
-                <img src={codingQuizz} class="password-generator" alt="Password Generator" />
+    <section id="portfolio">
+      {projects.map(project => (
+        <div key={project.id} className="rotate-container">
+          <div className="rotate-card">
+            <div className="rotate-card-inner">
+              <div className="rotate-card-front">
+                <img src={project.image} className="guess-game" alt={project.title} />
               </div>
-              <div class="rotate-card-back">
+              <div className="rotate-card-back">
                 <div>
-                  <h1>Coding Quizz</h1>
-                  <ul class="password-list">
-                    <li><b>KEYWORDS:</b> DOM, timer, event listener, bubbling, storage</li>
-                    <li><b>PURPOSE:</b> Understand APIs, Local storage, java functions</li>
-                    <li><b>INITIATIVE:</b> personal design styling</li>
-                    <li><b>GOING BEYOND:</b> added an extra two questions for the quizz</li>
+                  <h1>{project.title}</h1>
+                  <ul className="password-list">
+                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
+                    <li><b>PURPOSE:</b> {project.purpose}</li>
+                    <li><b>INITIATIVE:</b> {project.initiative}</li>
+                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
                   </ul>
-                  <div class="card-links">
-                <h4><a id="weblink" href="https://waynefenwick.github.io/Coding-Quiz-Challenge/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                <a href="https://github.com/waynefenwick/Coding-Quiz-Challenge" target="_blank" rel="noreferrer">
-                  <i className="fab fa-github fa-2x"></i>
-                </a>
+                  <div className="card-links">
+                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                      <i className="fab fa-github fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-      </section>
+      ))}
+    </section>
 
-      <section id="portfolio">
-        <div id="password-generator" class="rotate-container">
-          <div class="rotate-card">
-            <div class="rotate-card-inner">
-              <div class="rotate-card-front">
-                <img src={weather} class="password-generator" alt="Password Generator" />
+
+    <section id="portfolio">
+      {projects.map(project => (
+        <div key={project.id} className="rotate-container">
+          <div className="rotate-card">
+            <div className="rotate-card-inner">
+              <div className="rotate-card-front">
+                <img src={project.image} className="guess-game" alt={project.title} />
               </div>
-              <div class="rotate-card-back">
+              <div className="rotate-card-back">
                 <div>
-                  <h1>Weather App</h1>
-                  <ul class="password-list">
-                    <li><b>KEYWORDS:</b> fetch, API, JSON, parse, network</li>
-                    <li><b>PURPOSE:</b> learn how 3rd Party APIs work</li>
-                    <li><b>INITIATIVE:</b> personal design styling of a weather app</li>
-                    <li><b>GOING BEYOND:</b> extensive commitment of time</li>
+                  <h1>{project.title}</h1>
+                  <ul className="password-list">
+                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
+                    <li><b>PURPOSE:</b> {project.purpose}</li>
+                    <li><b>INITIATIVE:</b> {project.initiative}</li>
+                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
                   </ul>
-                  <div class="card-links">
-                <h4><a id="weblink" href="https://waynefenwick.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                <a href="https://github.com/waynefenwick/Weather-Dashboard" target="_blank" rel="noreferrer">
-                  <i className="fab fa-github fa-2x"></i>
-                </a>
+                  <div className="card-links">
+                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                      <i className="fab fa-github fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-      </section>
+      ))}
+    </section>
 
-      <section id="portfolio">
-        <div id="password-generator" class="rotate-container">
-          <div class="rotate-card">
-            <div class="rotate-card-inner">
-              <div class="rotate-card-front">
-                <img src={bookshare} class="password-generator" alt="Password Generator" />
+
+    <section id="portfolio">
+      {projects.map(project => (
+        <div key={project.id} className="rotate-container">
+          <div className="rotate-card">
+            <div className="rotate-card-inner">
+              <div className="rotate-card-front">
+                <img src={project.image} className="coding-quizz" alt={project.title} />
               </div>
-              <div class="rotate-card-back">
+              <div className="rotate-card-back">
                 <div>
-                  <h1>BookShare</h1>
-                  <ul class="password-list">
-                    <li><b>KEYWORDS:</b> handlebars, MySQL, Node.js, Express</li>
-                    <li><b>PURPOSE:</b> Use Node.js and Express.js to create a RESTful API</li>
-                    <li><b>INITIATIVE:</b> create design and folderstructure of project</li>
-                    <li><b>GOING BEYOND:</b> Prepping presentation and showing some leadership</li>
+                  <h1>{project.title}</h1>
+                  <ul className="password-list">
+                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
+                    <li><b>PURPOSE:</b> {project.purpose}</li>
+                    <li><b>INITIATIVE:</b> {project.initiative}</li>
+                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
                   </ul>
-                  <div class="card-links">
-                <h4><a id="weblink" href="https://fathomless-stream-98788-44df48fe7ade.herokuapp.com/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                <a href="https://github.com/waynefenwick/BookShare" target="_blank" rel="noreferrer">
-                  <i className="fab fa-github fa-2x"></i>
-                </a>
+                  <div className="card-links">
+                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                      <i className="fab fa-github fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      ))}
+    </section>
 
-
-      <section id="portfolio">
-        <div id="password-generator" class="rotate-container">
-          <div class="rotate-card">
-            <div class="rotate-card-inner">
-              <div class="rotate-card-front">
-                <img src={movieReviews} class="password-generator" alt="Password Generator" />
+    <section id="portfolio">
+      {projects.map(project => (
+        <div key={project.id} className="rotate-container">
+          <div className="rotate-card">
+            <div className="rotate-card-inner">
+              <div className="rotate-card-front">
+                <img src={project.image} className="weather" alt={project.title} />
               </div>
-              <div class="rotate-card-back">
+              <div className="rotate-card-back">
                 <div>
-                  <h1>Movie Reviews</h1>
-                    <ul class="password-list">
-                    <li><b>KEYWORDS:</b> teamwork, css framework, interactive, README</li>
-                    <li><b>PURPOSE:</b> API intergration backed by full functionality</li>
-                    <li><b>INITIATIVE:</b> styling and design</li>
-                    <li><b>GOING BEYOND:</b> Extra time on styling</li>
+                  <h1>{project.title}</h1>
+                  <ul className="password-list">
+                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
+                    <li><b>PURPOSE:</b> {project.purpose}</li>
+                    <li><b>INITIATIVE:</b> {project.initiative}</li>
+                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
                   </ul>
-                  <div class="card-links">
-                <h4><a id="weblink" href="https://fersill53.github.io/movie-reviews-and-gifs/" target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                <a href="https://github.com/Fersill53/movie-reviews-and-gifs" target="_blank" rel="noreferrer">
-                  <i className="fab fa-github fa-2x"></i>
-                </a>
+                  <div className="card-links">
+                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                      <i className="fab fa-github fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-</div>
+      ))}
+    </section>
+
+    <section id="portfolio">
+      {projects.map(project => (
+        <div key={project.id} className="rotate-container">
+          <div className="rotate-card">
+            <div className="rotate-card-inner">
+              <div className="rotate-card-front">
+                <img src={project.image} className="movie-reviews" alt={project.title} />
+              </div>
+              <div className="rotate-card-back">
+                <div>
+                  <h1>{project.title}</h1>
+                  <ul className="password-list">
+                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
+                    <li><b>PURPOSE:</b> {project.purpose}</li>
+                    <li><b>INITIATIVE:</b> {project.initiative}</li>
+                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
+                  </ul>
+                  <div className="card-links">
+                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                      <i className="fab fa-github fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </section>
+
+    <section id="portfolio">
+      {projects.map(project => (
+        <div key={project.id} className="rotate-container">
+          <div className="rotate-card">
+            <div className="rotate-card-inner">
+              <div className="rotate-card-front">
+                <img src={project.image} className="bookshare" alt={project.title} />
+              </div>
+              <div className="rotate-card-back">
+                <div>
+                  <h1>{project.title}</h1>
+                  <ul className="password-list">
+                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
+                    <li><b>PURPOSE:</b> {project.purpose}</li>
+                    <li><b>INITIATIVE:</b> {project.initiative}</li>
+                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
+                  </ul>
+                  <div className="card-links">
+                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                      <i className="fab fa-github fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </section>
 
 
       <section id="contact" class="contact">
