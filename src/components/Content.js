@@ -116,46 +116,47 @@ const Content = () => {
         </section>
 
         <section id="contact-container">
-          <div  className="contact">
-          <div>
-            <h1 id="contactMe">
-              Contact Me{' '}
-              <span className="orange-icon">(</span>
-              <i className="fas fa-exclamation-triangle orange-icon"></i>
-              <span className="orange-icon">)</span>
-            </h1>
-            <form id="contact-form">
-              <div className="form-group">
-                <label htmlFor="name" className="form-label">
-                  Name
-                </label>
-                <input type="text" className="form-control" id="name" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email" className="form-label">
-                  Email address
-                </label>
-                <input type="email" className="form-control" id="email" />
-                <div className="notification" id="email-notification">
-                  Invalid email address.
+          <div className="contact">
+            <div>
+              <h1 id="contactMe">
+                Contact Me{' '}
+                <span className="orange-icon">(</span>
+                <i className="fas fa-exclamation-triangle orange-icon"></i>
+                <span className="orange-icon">)</span>
+              </h1>
+              <form id="contact-form">
+                <div className="form-group">
+                  <label htmlFor="name" className="form-label">
+                    Name
+                  </label>
+                  <input type="text" className="form-control" id="name" required />
                 </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="message" className="form-label">
-                  Message
-                </label>
-                <textarea className="form-control" id="message" rows="5"></textarea>
-                <div className="notification" id="message-notification">
-                  Please enter a message.
+                <div className="form-group">
+                  <label htmlFor="email" className="form-label">
+                    Email address
+                  </label>
+                  <input type="email" className="form-control" id="email" required />
+                  <div className="notification" id="email-notification">
+                    Invalid email address.
+                  </div>
                 </div>
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
-            </form>
-          </div>
+                <div className="form-group">
+                  <label htmlFor="message" className="form-label">
+                    Message
+                  </label>
+                  <textarea className="form-control" id="message" rows="5" required></textarea>
+                  <div className="notification" id="message-notification">
+                    Please enter a message.
+                  </div>
+                </div>
+                <button type="submit" className="btn btn-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
         </section>
+
 
         <section id="proficiencies-container">
           <div className="proficiencies">
