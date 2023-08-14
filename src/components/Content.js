@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import projects from '../projectData'; // Import the projects data
 import profilePic from '../assets/Profile-Pic.png'; // Adjust the path as needed
 
-// Still working on Form
+// Still working on Form to update Github
 const Content = () => {
   useEffect(() => {
     const form = document.getElementById('contact-form');
