@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import projects from './projectData'; // Import the projects data
+import projects from '../projectData'; // Import the projects data
 
 const Content = () => {
   useEffect(() => {
@@ -52,88 +52,98 @@ const Content = () => {
     });
   }, []);
   
-  
   return (
     <>
-<section id="portfolio">
-  {projects.map(project => (
-    <div key={project.id} className="rotate-container">
-      <div className="rotate-card">
-        <div className="rotate-card-inner">
-          <div className="rotate-card-front">
-            <img src={project.image} className={project.imageClassName} alt={project.title} />
-          </div>
-          <div className="rotate-card-back">
-            <div>
-              <h1>{project.title}</h1>
-              <ul className="password-list">
-                <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
-                <li><b>PURPOSE:</b> {project.purpose}</li>
-                <li><b>INITIATIVE:</b> {project.initiative}</li>
-                <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
-              </ul>
-              <div className="card-links">
-                <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                <a href={project.githubLink} target="_blank" rel="noreferrer">
-                  <i className="fab fa-github fa-2x"></i>
-                </a>
+    <section id="portfolio-container">
+      <div id="portfolio">
+        {projects.map(project => (
+          <div key={project.id} className="rotate-container">
+            <div className="rotate-card">
+              <div className="rotate-card-inner">
+                <div className="rotate-card-front">
+                  <img src={project.image} className={project.imageClassName} alt={project.title} />
+                </div>
+                <div className="rotate-card-back">
+                  <div>
+                    <h1>{project.title}</h1>
+                    <ul className="password-list">
+                      <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
+                      <li><b>PURPOSE:</b> {project.purpose}</li>
+                      <li><b>INITIATIVE:</b> {project.initiative}</li>
+                      <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
+                    </ul>
+                    <div className="card-links">
+                      <h4><a href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                      <a href={project.githubLink} target="_blank" rel="noreferrer">
+                        <i className="fab fa-github fa-2x"></i>
+                      </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
-      </div>
-    </div>
-  ))}
-</section>
+      </section>
 
-
-      <section id="contact" class="contact">
+      <section id="contact" className="contact">
         <div>
-        <h1 id="contactMe">
-      Contact Me
-      <span class="orange-icon">(</span><i class="fas fa-exclamation-triangle orange-icon"></i><span class="orange-icon">)</span>
-    </h1>
+          <h1 id="contactMe">
+            Contact Me{' '}
+            <span className="orange-icon">(</span>
+            <i className="fas fa-exclamation-triangle orange-icon"></i>
+            <span className="orange-icon">)</span>
+          </h1>
           <form id="contact-form">
             <div className="form-group">
-              <label htmlFor="name" className="form-label">Name</label>
+              <label htmlFor="name" className="form-label">
+                Name
+              </label>
               <input type="text" className="form-control" id="name" />
             </div>
             <div className="form-group">
-              <label htmlFor="email" className="form-label">Email address</label>
+              <label htmlFor="email" className="form-label">
+                Email address
+              </label>
               <input type="email" className="form-control" id="email" />
               <div className="notification" id="email-notification">
                 Invalid email address.
               </div>
             </div>
             <div className="form-group">
-              <label htmlFor="message" className="form-label">Message</label>
+              <label htmlFor="message" className="form-label">
+                Message
+              </label>
               <textarea className="form-control" id="message" rows="5"></textarea>
               <div className="notification" id="message-notification">
                 Please enter a message.
               </div>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
           </form>
         </div>
       </section>
 
-
-      <section id="proficiencies" className="proficiencies">
-        <div className="resume-container">
-          <h1>Proficiencies</h1>
-            <div class="proficiency-box">
-              <b><ul class="proficiency-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bulldogging</li>
-                <li>Project Management</li>
-                <li>UI/UX</li>
-                <li>Debugging</li>
-              </ul></b>
-            </div>
-            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume (PDF)</a>
-            <iframe src="https://waynefenwick.github.io/Resume/" title="Wayne Fenwick Resume"></iframe>
+      <section id="proficiencies">
+      <h1 id="profTitle">Proficiencies</h1>
+        <div id="proficiency-box">
+          <b><ul id="proficiency-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bulldogging</li>
+            <li>Project Management</li>
+            <li>UI/UX</li>
+            <li>Debugging</li>
+          </ul></b>
         </div>
+      </section>
+
+      <section id="resume">
+        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download id="downloadBtn">Download Resume (PDF)</a>
+        <iframe src="https://waynefenwick.github.io/Resume/" title="Wayne Fenwick Resume"></iframe>
       </section>
     </>
   );

@@ -9,15 +9,15 @@ import movieReviews from './assets/movie-reviews.png';
 const projects = [
      {
      id: 1,
-     title: "Password Generator",
-     image: passwordGen,
-     imageClassName: "password-generator",
-     keywords: ["console.log", "variable", "array", "functions"],
-     purpose: "Build a password generator app",
-     initiative: "Added the copy to clipboard option",
-     goingBeyond: "Changed CSS design of starter code provided",
-     webLink: "https://waynefenwick.github.io/Password-Generator/",
-     githubLink: "https://github.com/waynefenwick/Password-Generator"
+     title: "Movie Reviews",
+     image: movieReviews,
+     imageClassName: "movie-reviews",
+     keywords: ["teamwork", "css framework", "interactive", "README"],
+     purpose: "API integration backed by full functionality",
+     initiative: "Styling and design",
+     goingBeyond: "Extra time on styling",
+     webLink: "https://fersill53.github.io/movie-reviews-and-gifs/",
+     githubLink: "https://github.com/Fersill53/movie-reviews-and-gifs"
      },
 
      {
@@ -74,15 +74,15 @@ const projects = [
 
      {
      id: 6,
-     title: "Movie Reviews",
-     image: movieReviews,
-     imageClassName: "movie-reviews",
-     keywords: ["teamwork", "css framework", "interactive", "README"],
-     purpose: "API integration backed by full functionality",
-     initiative: "Styling and design",
-     goingBeyond: "Extra time on styling",
-     webLink: "https://fersill53.github.io/movie-reviews-and-gifs/",
-     githubLink: "https://github.com/Fersill53/movie-reviews-and-gifs"
+     title: "Password Generator",
+     image: passwordGen,
+     imageClassName: "password-generator",
+     keywords: ["console.log", "variable", "array", "functions"],
+     purpose: "Build a password generator app",
+     initiative: "Added the copy to clipboard option",
+     goingBeyond: "Changed CSS design of starter code provided",
+     webLink: "https://waynefenwick.github.io/Password-Generator/",
+     githubLink: "https://github.com/waynefenwick/Password-Generator"
      },
 ];
 
