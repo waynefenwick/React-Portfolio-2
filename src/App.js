@@ -1,18 +1,27 @@
 import React from 'react';
-import './styles.css';
 import Header from './components/Header';
-import Content from './components/Content';
 import Footer from './components/Footer';
+import PortfolioSection from './PortfolioSection'; // Import your PortfolioSection component
+import './styles.css'; // Import your global styles
 
-function App() {
+const App = () => {
   return (
     <div>
       <Header />
-      <Content />
+
+      {/* Render each portfolio section individually */}
+      <PortfolioSection imageClassName="password-generator" />
+      <PortfolioSection imageClassName="guess-game" />
+      <PortfolioSection imageClassName="coding-quizz" />
+      <PortfolioSection imageClassName="weather" />
+      <PortfolioSection imageClassName="bookshare" />
+      <PortfolioSection imageClassName="movie-reviews" />
+
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
+
 

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import profilePic from '../assets/Profile-Pic.png';
 import projects from './projectData'; // Import the projects data
 
 const Content = () => {
@@ -56,224 +55,36 @@ const Content = () => {
   
   return (
     <>
-    <section id="portfolio">
-      {projects.map(project => (
-        <div key={project.id} className="rotate-container">
-          <div className="rotate-card">
-            <div className="rotate-card-inner">
-              <div className="rotate-card-front">
-                <img src={project.image} className="password-generator" alt={project.title} />
-              </div>
-              <div className="rotate-card-back">
-                <div>
-                  <h1>{project.title}</h1>
-                  <ul className="password-list">
-                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
-                    <li><b>PURPOSE:</b> {project.purpose}</li>
-                    <li><b>INITIATIVE:</b> {project.initiative}</li>
-                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
-                  </ul>
-                  <div className="card-links">
-                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                    <a href={project.githubLink} target="_blank" rel="noreferrer">
-                      <i className="fab fa-github fa-2x"></i>
-                    </a>
-                  </div>
-                </div>
+<section id="portfolio">
+  {projects.map(project => (
+    <div key={project.id} className="rotate-container">
+      <div className="rotate-card">
+        <div className="rotate-card-inner">
+          <div className="rotate-card-front">
+            <img src={project.image} className={project.imageClassName} alt={project.title} />
+          </div>
+          <div className="rotate-card-back">
+            <div>
+              <h1>{project.title}</h1>
+              <ul className="password-list">
+                <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
+                <li><b>PURPOSE:</b> {project.purpose}</li>
+                <li><b>INITIATIVE:</b> {project.initiative}</li>
+                <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
+              </ul>
+              <div className="card-links">
+                <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
+                <a href={project.githubLink} target="_blank" rel="noreferrer">
+                  <i className="fab fa-github fa-2x"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      ))}
-    </section>
-
-    <section id="portfolio">
-      {projects.map(project => (
-        <div key={project.id} className="rotate-container">
-          <div className="rotate-card">
-            <div className="rotate-card-inner">
-              <div className="rotate-card-front">
-                <img src={project.image} className="guess-game" alt={project.title} />
-              </div>
-              <div className="rotate-card-back">
-                <div>
-                  <h1>{project.title}</h1>
-                  <ul className="password-list">
-                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
-                    <li><b>PURPOSE:</b> {project.purpose}</li>
-                    <li><b>INITIATIVE:</b> {project.initiative}</li>
-                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
-                  </ul>
-                  <div className="card-links">
-                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                    <a href={project.githubLink} target="_blank" rel="noreferrer">
-                      <i className="fab fa-github fa-2x"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </section>
-
-
-    <section id="portfolio">
-      {projects.map(project => (
-        <div key={project.id} className="rotate-container">
-          <div className="rotate-card">
-            <div className="rotate-card-inner">
-              <div className="rotate-card-front">
-                <img src={project.image} className="guess-game" alt={project.title} />
-              </div>
-              <div className="rotate-card-back">
-                <div>
-                  <h1>{project.title}</h1>
-                  <ul className="password-list">
-                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
-                    <li><b>PURPOSE:</b> {project.purpose}</li>
-                    <li><b>INITIATIVE:</b> {project.initiative}</li>
-                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
-                  </ul>
-                  <div className="card-links">
-                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                    <a href={project.githubLink} target="_blank" rel="noreferrer">
-                      <i className="fab fa-github fa-2x"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </section>
-
-
-    <section id="portfolio">
-      {projects.map(project => (
-        <div key={project.id} className="rotate-container">
-          <div className="rotate-card">
-            <div className="rotate-card-inner">
-              <div className="rotate-card-front">
-                <img src={project.image} className="coding-quizz" alt={project.title} />
-              </div>
-              <div className="rotate-card-back">
-                <div>
-                  <h1>{project.title}</h1>
-                  <ul className="password-list">
-                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
-                    <li><b>PURPOSE:</b> {project.purpose}</li>
-                    <li><b>INITIATIVE:</b> {project.initiative}</li>
-                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
-                  </ul>
-                  <div className="card-links">
-                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                    <a href={project.githubLink} target="_blank" rel="noreferrer">
-                      <i className="fab fa-github fa-2x"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </section>
-
-    <section id="portfolio">
-      {projects.map(project => (
-        <div key={project.id} className="rotate-container">
-          <div className="rotate-card">
-            <div className="rotate-card-inner">
-              <div className="rotate-card-front">
-                <img src={project.image} className="weather" alt={project.title} />
-              </div>
-              <div className="rotate-card-back">
-                <div>
-                  <h1>{project.title}</h1>
-                  <ul className="password-list">
-                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
-                    <li><b>PURPOSE:</b> {project.purpose}</li>
-                    <li><b>INITIATIVE:</b> {project.initiative}</li>
-                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
-                  </ul>
-                  <div className="card-links">
-                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                    <a href={project.githubLink} target="_blank" rel="noreferrer">
-                      <i className="fab fa-github fa-2x"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </section>
-
-    <section id="portfolio">
-      {projects.map(project => (
-        <div key={project.id} className="rotate-container">
-          <div className="rotate-card">
-            <div className="rotate-card-inner">
-              <div className="rotate-card-front">
-                <img src={project.image} className="movie-reviews" alt={project.title} />
-              </div>
-              <div className="rotate-card-back">
-                <div>
-                  <h1>{project.title}</h1>
-                  <ul className="password-list">
-                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
-                    <li><b>PURPOSE:</b> {project.purpose}</li>
-                    <li><b>INITIATIVE:</b> {project.initiative}</li>
-                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
-                  </ul>
-                  <div className="card-links">
-                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                    <a href={project.githubLink} target="_blank" rel="noreferrer">
-                      <i className="fab fa-github fa-2x"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </section>
-
-    <section id="portfolio">
-      {projects.map(project => (
-        <div key={project.id} className="rotate-container">
-          <div className="rotate-card">
-            <div className="rotate-card-inner">
-              <div className="rotate-card-front">
-                <img src={project.image} className="bookshare" alt={project.title} />
-              </div>
-              <div className="rotate-card-back">
-                <div>
-                  <h1>{project.title}</h1>
-                  <ul className="password-list">
-                    <li><b>KEYWORDS:</b> {project.keywords.join(', ')}</li>
-                    <li><b>PURPOSE:</b> {project.purpose}</li>
-                    <li><b>INITIATIVE:</b> {project.initiative}</li>
-                    <li><b>GOING BEYOND:</b> {project.goingBeyond}</li>
-                  </ul>
-                  <div className="card-links">
-                    <h4><a id="weblink" href={project.webLink} target="_blank" rel="noreferrer">Visit the Web</a></h4>
-                    <a href={project.githubLink} target="_blank" rel="noreferrer">
-                      <i className="fab fa-github fa-2x"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </section>
+      </div>
+    </div>
+  ))}
+</section>
 
 
       <section id="contact" class="contact">
