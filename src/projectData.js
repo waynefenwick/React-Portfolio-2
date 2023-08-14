@@ -1,10 +1,10 @@
 // src/projectData.js
-import passwordGen from './assets/password-generator.png';
+import movieReviews from './assets/movie-reviews.png';
 import guessGame from './assets/guess-game.png';
 import codingQuizz from './assets/coding-quizz.png';
 import weather from './assets/weather.png';
 import bookshare from './assets/bookshare.png';
-import movieReviews from './assets/movie-reviews.png';
+import passwordGen from './assets/password-generator.png';
 
 const projects = [
      {
@@ -76,7 +76,7 @@ const projects = [
      id: 6,
      title: "Password Generator",
      image: passwordGen,
-     imageClassName: "password-generator",
+     imgClassName: "password-generator",
      keywords: ["console.log", "variable", "array", "functions"],
      purpose: "Build a password generator app",
      initiative: "Added the copy to clipboard option",

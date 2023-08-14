@@ -41,7 +41,7 @@ const Header = () => {
             <li>
               <a
                 className={`link ${activeLink === 2 ? 'active' : ''}`}
-                href="#contact"
+                href="#contact-container"
                 onClick={() => handleLinkClick(2)}
               >
                 Contact
@@ -50,7 +50,7 @@ const Header = () => {
             <li>
               <a
                 className={`link ${activeLink === 3 ? 'active' : ''}`}
-                href="#proficiencies"
+                href="#proficiencies-container"
                 onClick={() => handleLinkClick(3)}
               >
                 Resume
