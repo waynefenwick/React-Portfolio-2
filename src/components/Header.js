@@ -13,9 +13,9 @@ const Header = () => {
   }, []);
 
   return (
-    <header>
-      <div id="header-content">
-        <div id="name">
+    <header id="header-container">
+      <div className="header">
+        <div className="name">
           <h1>WAYNE FENWICK</h1>
         </div>
         <div id="nav">
