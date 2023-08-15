@@ -11,7 +11,8 @@ body {
   align-items: center;
   top: 0;
   justify-content: space-around;
-  width: auto;
+  width: 100%;
+  height: auto;
   position: fixed;
   z-index: 1;
   border-bottom: 5px solid rgb(170, 1, 1);
@@ -79,7 +80,7 @@ body {
   padding: 10px 20px 60px 20px;
   margin-top: 170px;
   scroll-margin-top: 130px;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -133,7 +134,7 @@ h1, h3 {
   justify-content: center; /* Center items horizontally within the row */
   align-items: flex-start; /* Align items at the top of the container */
   scroll-margin-top: 85px;
-  width: auto;
+  width: 100%;
   height: auto;
   padding: 20px 20px 50px 20px;
 }
@@ -382,7 +383,7 @@ button[type="submit"]:hover {
   justify-content: center; /* Center items horizontally within the row */
   align-items: flex-start; /* Align items at the top of the container */
   scroll-margin-top: 80px;
-  width: auto;
+  width: 100%;
   height: auto;
   padding: 20px 20px 20px 20px;
   text-align: center;
@@ -529,4 +530,22 @@ footer {
   color: rgb(170, 1, 1);
   filter: brightness(1.2);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
+}
+
+@media (max-width: 768px) {
+  #profile-container {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-container {
+    scroll-margin-top: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  #portfolio-container {
+    scroll-margin-top: 45px;
+  }
 }
