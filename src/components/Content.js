@@ -55,28 +55,26 @@ const Content = () => {
   
   return (
     <>
-<section id="profile-container">
-  <div class="profile">
-    <img src={profilePic} className="profile-picture" alt="Profile Picture" />
-    <div className="personal-profile">
-          <br />
-          <div>
-            <div id="profile-header">
-              <h1><u>Personal Profile</u></h1>
-            </div>
-            <h3>
-              <ul>
-                <li class="flip-trigger">Born and raised in South Africa</li>
-                <li>Am a naturalized American</li>
-                <li>Have a certificate in coding through UT Austin</li>
-                <li>Accrued numerous transferable skills</li>
-                <li>Extensive Project Management experience</li>
-                <li>BA in communication; MA in counseling</li>
-                <li>German and Turkish international experience</li>
-                <li>Am an avid and competitive cyclist</li>
-              </ul>
-            </h3>
-          </div>
+    <section id="profile-container">
+      <div className="profile-picture">
+        <img src={profilePic} id="picture" alt="Profile Picture" />
+      </div>
+      <div className="profile-personal">
+        <br />
+        <div>
+            <h1 id="profile-header"><u>Personal Profile</u></h1>
+          <h3>
+            <ul>
+              <li>Born and raised in South Africa</li>
+              <li>Am a naturalized American</li>
+              <li>Have a certificate in coding through UT Austin</li>
+              <li>Accrued numerous transferable skills</li>
+              <li>Extensive Project Management experience</li>
+              <li>BA in communication; MA in counseling</li>
+              <li>German and Turkish international experience</li>
+              <li>Am an avid and competitive cyclist</li>
+            </ul>
+          </h3>
         </div>
       </div>
     </section>
