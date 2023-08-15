@@ -55,13 +55,12 @@ const Content = () => {
   
   return (
     <>
-      <section id="profile-container">
-        <div class="profile">
-          <img src={profilePic} className="profile-picture" alt="Profile Picture" />
-        </div>
-        <div className="personal-profile">
+<section id="profile-container">
+  <div class="profile">
+    <img src={profilePic} className="profile-picture" alt="Profile Picture" />
+    <div className="personal-profile">
           <br />
-          <div id="profile-list">
+          <div>
             <div id="profile-header">
               <h1><u>Personal Profile</u></h1>
             </div>
@@ -79,7 +78,8 @@ const Content = () => {
             </h3>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <section id="portfolio-container">
         <div className="portfolio">
