@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer-container">
       <div className="footer-icons">
         {/* GitHub */}
         <a
