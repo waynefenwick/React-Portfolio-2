@@ -2,10 +2,33 @@ import React, { useState, useEffect } from 'react';
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(0);
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupPosition, setPopupPosition] = useState({});
 
-  const handleLinkClick = (index) => {
+  const handleLinkClick = (index, event) => {
     setActiveLink(index);
+    if (index === 1) {
+      const linkPosition = event.target.getBoundingClientRect();
+      let topPosition = linkPosition.bottom + window.scrollY + 10 + 'px';
+  
+      // Add a media query for smaller screens (adjust the max-width as needed)
+      if (window.innerWidth <= 768) {
+        topPosition = linkPosition.bottom + 10 + 'px'; // Adjust the top position for smaller screens
+      }
+  
+      setPopupPosition({
+        top: topPosition,
+        left: linkPosition.left + -12 + 'px',
+      });
+  
+      setShowPopup(true);
+      setTimeout(() => {
+        setShowPopup(false);
+      }, 3000); // Show for 3 seconds
+    }
   };
+  
+  
 
   useEffect(() => {
     // Set 'About Me' as active by default when the component mounts
@@ -33,7 +56,7 @@ const Header = () => {
               <a
                 className={`link ${activeLink === 1 ? 'active' : ''}`}
                 href="#portfolio-container"
-                onClick={() => handleLinkClick(1)}
+                onClick={(event) => handleLinkClick(1, event)}
               >
                 Portfolio
               </a>
@@ -59,6 +82,11 @@ const Header = () => {
           </ul>
         </div>
       </div>
+      {showPopup && (
+        <div id="popup" style={popupPosition}>
+          <p>Tap a Box</p>
+        </div>
+      )}
     </header>
   );
 };
