@@ -154,7 +154,6 @@ const Content = () => {
           </div>
         </section>
 
-
         <section id="proficiencies-container">
           <div className="proficiencies">
           <h1 id="profTitle">Proficiencies</h1>

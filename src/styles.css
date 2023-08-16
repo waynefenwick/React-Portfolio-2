@@ -545,6 +545,23 @@ iframe {
   #profile-container {
     margin-top: 280px;
   }
+
+  #picture {
+    max-width: 65%; /* Adjust the max-width for smaller screens */
+  }
+
+  .profile-picture {
+    display: flex; /* Display items horizontally */
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0px; /* Center the profile items */
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  #profile-header {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 768px) {
