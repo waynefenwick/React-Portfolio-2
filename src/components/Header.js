@@ -13,7 +13,8 @@ const Header = () => {
   
       // Add a media query for smaller screens (adjust the max-width as needed)
       if (window.innerWidth <= 768) {
-        topPosition = linkPosition.bottom + 10 + 'px'; // Adjust the top position for smaller screens
+        // Adjust the top position for smaller screens
+        topPosition = linkPosition.bottom + 10 + 'px';
       }
   
       setPopupPosition({
@@ -28,8 +29,6 @@ const Header = () => {
     }
   };
   
-  
-
   useEffect(() => {
     // Set 'About Me' as active by default when the component mounts
     setActiveLink(0);

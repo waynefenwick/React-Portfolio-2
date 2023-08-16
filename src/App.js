@@ -1,8 +1,8 @@
 import React from 'react';
+import projects from './projectData';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Content from './components/Content';
-import projects from './projectData'; // Import projects array
+import Footer from './components/Footer';
 
 import './styles.css';
 
