@@ -170,12 +170,12 @@ const Content = () => {
         </div>
       </section>
 
-      {/* <section id="resume-container">
+      <section id="resume-container">
         <div className="resume">
           <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download id="downloadBtn">Download Resume (PDF)</a>
           <iframe src="https://waynefenwick.github.io/Resume/" title="Wayne Fenwick Resume"></iframe>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };

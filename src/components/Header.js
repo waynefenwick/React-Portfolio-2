@@ -70,13 +70,13 @@ const Header = () => {
               </a>
             </li>
             <li>
-              {/* <a
+              <a
                 className={`link ${activeLink === 3 ? 'active' : ''}`}
                 href="#proficiencies-container"
                 onClick={() => handleLinkClick(3)}
               >
                 Resume
-              </a> */}
+              </a>
             </li>
           </ul>
         </div>
