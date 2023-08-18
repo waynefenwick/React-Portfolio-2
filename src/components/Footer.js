@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-icons">
         {/* GitHub */}
         <a
-          href="https://waynefenwick.github.io/React-Portfolio/"
+          href="https://github.com/waynefenwick/"
           target="_blank"
           rel="noopener noreferrer"
         >
