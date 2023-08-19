@@ -55,11 +55,14 @@ const Content = () => {
   
   return (
     <>
-<section id="profile-container">
-  <div className="profile-picture">
-    <div className="rotate-profile">
-      <img src={profilePic} id="picture" alt="Profile Picture" />
-    </div>
+  <section id="profile-container">
+    <div className="profile-picture">
+      <div className="profile-picture">
+        <div className="rotate-profile">
+          <img src={profilePic} id="picture" alt="Profile Picture" className="rotate-trigger" />
+        </div>
+          </div>
+
     </div>
       <div className="profile-personal">
         <br />

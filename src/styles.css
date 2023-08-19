@@ -165,7 +165,7 @@ h1, h3 {
 }
 
 .rotate-trigger {
-  cursor: default;
+  cursor: pointer;
 }
 
 .rotate-trigger span {
@@ -177,10 +177,11 @@ h1, h3 {
   text-decoration: underline;
 }
 
-#south-africa.rotate-profile:hover {
-  cursor: pointer;
+.rotate-trigger:hover .rotate-profile img {
   transform: rotateY(180deg);
 }
+
+
 
 
 
