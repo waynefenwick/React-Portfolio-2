@@ -148,25 +148,48 @@ h1, h3 {
   margin: 2px;
 }
 
-
-.drop-down-trigger {
-  cursor: pointer;
-}
-
-.rotate-trigger span {
-  color: black;
-}
-
 #highlight {
   color: var(--red);
   text-decoration: underline;
 }
 
-.rotate-trigger:hover .rotate-profile img {
-  transform: rotateY(180deg);
+#profile-list {
+  width: 100%;
+}
+.profile-list li {
+  margin-bottom: 5px;
+}
+
+.drop-down-trigger {
+  cursor: pointer;
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.drop-down {
+  list-style: inside;
+  font-size: 12px;
+  padding-left: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid transparent; /* Set initial border color to transparent */
+  color: white;
+}
+
+.drop-down-trigger:hover + .drop-down {
+  max-height: 225px; /* Adjust this value based on the content height */
+  opacity: 1;
+  border-color: var(--red); /* Show the border when the list is visible */
+  background-color: #4b4948;
 }
 
 
+.drop-down li {
+  margin: 1px 0;
+}
 
 
 
