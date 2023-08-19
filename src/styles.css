@@ -148,23 +148,8 @@ h1, h3 {
   margin: 2px;
 }
 
-.rotate-profile {
-  perspective: 1000px;
-  cursor: pointer;
-  transition: transform 0.5s;
-}
 
-.rotate-profile img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  border: 5px solid var(--red);
-  box-shadow: 5px 5px 20px var(--shadow);
-  transition: transform 0.5s;
-}
-
-.rotate-trigger {
+.drop-down-trigger {
   cursor: pointer;
 }
 
@@ -172,7 +157,7 @@ h1, h3 {
   color: black;
 }
 
-.rotate-trigger span.rotate-profile {
+#highlight {
   color: var(--red);
   text-decoration: underline;
 }

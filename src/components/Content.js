@@ -55,79 +55,78 @@ const Content = () => {
   
   return (
     <>
-  <section id="profile-container">
-    <div className="profile-picture">
+    <section id="profile-container">
       <div className="profile-picture">
-        <div className="rotate-profile">
-          <img src={profilePic} id="picture" alt="Profile Picture" className="rotate-trigger" />
-        </div>
+        <div className="profile-picture">
+          <div className="rotate-profile">
+            <img src={profilePic} id="picture" alt="Profile Picture" className="rotate-trigger" />
           </div>
-
-    </div>
-      <div className="profile-personal">
-        <br />
-        <div>
-          <h1 id="profile-header"><u>Personal Profile</u></h1>
-          <h3>
-            <ul>
-              <li className="rotate-trigger">
-                <span>Born and raised in </span>
-                <span className="rotate-profile">
-                  South Africa
-                </span>
-              </li>
-              <li className="rotate-trigger">
-                <span>Am a </span>
-                <span className="rotate-profile">
-                naturalized American
-                </span>
-              </li>
-              <li className="rotate-trigger">
-                <span>Have a </span>
-                <span className="rotate-profile">
-                certificate in coding
-                </span>
-                <span> through UT Austin </span>
-              </li>
-              <li className="rotate-trigger">
-                <span>Accrued numerous </span>
-                <span className="rotate-profile">
-                transferable skills
-                </span>
-              </li>
-              <li className="rotate-trigger">
-                <span>Extensive </span>
-                <span className="rotate-profile">
-                Project Management
-                </span>
-                <span>experience </span>
-              </li>
-              <li className="rotate-trigger">
-                <span>BA in </span>
-                <span className="rotate-profile">
-                communications;
-                </span>
-                <span> MA in </span>
-                <span className="rotate-profile">
-                counseling;
-                </span>
-              </li>
-              <li className="rotate-trigger">
-                <span>German & Turkish </span>
-                <span className="rotate-profile">
-                international experience
-                </span>
-              </li>
-              <li className="rotate-trigger">
-                <span>Am an avid and competitive </span>
-                <span className="rotate-profile">
-                cyclist
-                </span>
-              </li>
-            </ul>
-          </h3>
-        </div>
-      </div>
+          </div>
+            </div>
+              <div className="profile-personal">
+                <br />
+                <div>
+                  <h1 id="profile-header"><u>Personal Profile</u></h1>
+                  <h3>
+                    <ul>
+                      <li>
+                        <span>Born and raised in </span>
+                        <span id="highlight" className="drop-down-trigger">
+                          South Africa
+                        </span>
+                      </li>
+                      <li>
+                        <span>Am a </span>
+                        <span id="highlight" className="drop-down-trigger">
+                        naturalized American
+                        </span>
+                      </li>
+                      <li>
+                        <span>Have a </span>
+                        <span id="highlight" className="drop-down-trigger">
+                        certificate in coding
+                        </span>
+                        <span> through UT Austin </span>
+                      </li>
+                      <li>
+                        <span>Accrued numerous </span>
+                        <span id="highlight" className="drop-down-trigger">
+                        transferable skills
+                        </span>
+                      </li>
+                      <li>
+                        <span>Extensive </span>
+                        <span id="highlight" className="drop-down-trigger">
+                        Project Management
+                        </span>
+                        <span> experience </span>
+                      </li>
+                      <li>
+                        <span>BA in </span>
+                        <span id="highlight" className="drop-down-trigger">
+                        communications;
+                        </span>
+                        <span> MA in </span>
+                        <span id="highlight" className="drop-down-trigger">
+                        counseling;
+                        </span>
+                      </li>
+                      <li>
+                        <span>German & Turkish </span>
+                        <span id="highlight" className="drop-down-trigger">
+                        international experience
+                        </span>
+                      </li>
+                      <li>
+                        <span>Am an avid and competitive </span>
+                        <span id="highlight" className="drop-down-trigger">
+                        cyclist
+                        </span>
+                      </li>
+                    </ul>
+                  </h3>
+                </div>
+              </div>
     </section>
 
     <section id="portfolio-container">
