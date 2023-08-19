@@ -55,24 +55,72 @@ const Content = () => {
   
   return (
     <>
-    <section id="profile-container">
-      <div className="profile-picture">
-        <img src={profilePic} id="picture" alt="Profile Picture" />
-      </div>
+<section id="profile-container">
+  <div className="profile-picture">
+    <div className="rotate-profile">
+      <img src={profilePic} id="picture" alt="Profile Picture" />
+    </div>
+    </div>
       <div className="profile-personal">
         <br />
         <div>
-            <h1 id="profile-header"><u>Personal Profile</u></h1>
+          <h1 id="profile-header"><u>Personal Profile</u></h1>
           <h3>
             <ul>
-              <li>Born and raised in South Africa</li>
-              <li>Am a naturalized American</li>
-              <li>Have a certificate in coding through UT Austin</li>
-              <li>Accrued numerous transferable skills</li>
-              <li>Extensive Project Management experience</li>
-              <li>BA in communication; MA in counseling</li>
-              <li>German and Turkish international experience</li>
-              <li>Am an avid and competitive cyclist</li>
+              <li className="rotate-trigger">
+                <span>Born and raised in </span>
+                <span className="rotate-profile">
+                  South Africa
+                </span>
+              </li>
+              <li className="rotate-trigger">
+                <span>Am a </span>
+                <span className="rotate-profile">
+                naturalized American
+                </span>
+              </li>
+              <li className="rotate-trigger">
+                <span>Have a </span>
+                <span className="rotate-profile">
+                certificate in coding
+                </span>
+                <span> through UT Austin </span>
+              </li>
+              <li className="rotate-trigger">
+                <span>Accrued numerous </span>
+                <span className="rotate-profile">
+                transferable skills
+                </span>
+              </li>
+              <li className="rotate-trigger">
+                <span>Extensive </span>
+                <span className="rotate-profile">
+                Project Management
+                </span>
+                <span>experience </span>
+              </li>
+              <li className="rotate-trigger">
+                <span>BA in </span>
+                <span className="rotate-profile">
+                communications;
+                </span>
+                <span> MA in </span>
+                <span className="rotate-profile">
+                counseling;
+                </span>
+              </li>
+              <li className="rotate-trigger">
+                <span>German & Turkish </span>
+                <span className="rotate-profile">
+                international experience
+                </span>
+              </li>
+              <li className="rotate-trigger">
+                <span>Am an avid and competitive </span>
+                <span className="rotate-profile">
+                cyclist
+                </span>
+              </li>
             </ul>
           </h3>
         </div>
@@ -170,12 +218,12 @@ const Content = () => {
         </div>
       </section>
 
-      {/* <section id="resume-container">
+      <section id="resume-container">
         <div className="resume">
           <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" download id="downloadBtn">Download Resume (PDF)</a>
           <iframe src="https://waynefenwick.github.io/Resume/" title="Wayne Fenwick Resume"></iframe>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };

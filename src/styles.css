@@ -109,9 +109,8 @@ body {
 
 .profile-picture {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 #picture {
@@ -120,7 +119,9 @@ body {
   box-shadow: 5px 5px 20px var(--shadow);
   width: auto;
   transition: transform 0.5s;
+  cursor: default; /* Add this line to remove pointer cursor */
 }
+
 
 .profile-personal {
   display: flex;
@@ -146,6 +147,43 @@ body {
 h1, h3 {
   margin: 2px;
 }
+
+.rotate-profile {
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.rotate-profile img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid var(--red);
+  box-shadow: 5px 5px 20px var(--shadow);
+  transition: transform 0.5s;
+}
+
+.rotate-trigger {
+  cursor: default;
+}
+
+.rotate-trigger span {
+  color: black;
+}
+
+.rotate-trigger span.rotate-profile {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+#south-africa.rotate-profile:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+
+
 
 /* Portfolio */
 #portfolio-container {
