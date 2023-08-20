@@ -57,127 +57,127 @@ const Content = () => {
     <>
     
     <section id="profile-container">
-          <div className="profile-picture">
-            <img src={profilePic} id="picture" alt="Profile Picture" />
-          </div>
-              <div className="profile-personal">
-                <br />
-                <div id="profile-list">
-                  <h1 id="profile-header"><u>Personal Profile</u></h1>
-                  <h3>
-                    <ul class="profile-list">
-                      <li>
-                        <span>Born and raised in </span>
-                        <span id="highlight" className="drop-down-trigger">
-                          South Africa
-                        </span>
-                          <ul class="drop-down">
-                            <li>Born in Germiston</li> 
-                            <li>Raised in Johannesburg</li> 
-                            <li>Attended boys High School</li> 
-                            <li>Earned Service above Self award</li> 
-                            <li>Involved in the sports of cricket, rugby, swimming & water polo</li>
-                            <li>Played water polo for my state</li>
-                          </ul>
-                      </li>
-                      <li>
-                        <span>Am a </span>
-                        <span id="highlight" className="drop-down-trigger">
-                        naturalized American
-                        </span>
-                        <ul class="drop-down">
-                            <li>Became a naturalized American in 1998</li> 
-                            <li>Have lived in Alabama, Georgia, Florida & Texas</li> 
-                            <li>Worked for 6 companys</li> 
-                            <li>Have worked in sales, leadership and management roles</li>
-                          </ul>
-                      </li>
-                      <li>
-                        <span>UT Austin and a </span>
-                        <span id="highlight" className="drop-down-trigger">
-                        Certificate in coding
-                        </span>
-                        <ul class="drop-down">
-                            <li>Completed a course in Full-Stack coding</li> 
-                            <li>Strengths are in HTML and CSS in particular</li> 
-                            <li>Learned about front end, mid and back end coding</li> 
-                            <li>Database knowledge is in MySQL, NoSql & MongoDB</li>
-                            <li>Experience in node.js, express, OOP, ORM, MVC</li>  
-                            <li>Aquired knowledge in React, MERN and State</li>
-                            <li>Learned to utilize NPM libraries</li>
-                          </ul>
-                      </li>
-                      <li>
-                        <span>Accrued numerous </span>
-                        <span id="highlight" className="drop-down-trigger">
-                        transferable skills
-                        </span>
-                        <ul class="drop-down">
-                            <li>Strong communication skills</li> 
-                            <li>Extensive team leadership experience</li> 
-                            <li>Solid knowledge in project management</li> 
-                            <li>Self-disciplined and highly task-oriented</li> 
-                            <li>Self-motivated to finish the job</li>
-                            <li>Highly focused on quality over quantity</li>
-                          </ul>
-                      </li>
-                      <li>
-                        <span>Extensive experience in </span>
-                        <span id="highlight" className="drop-down-trigger">
-                        Project Management
-                        </span>
-                        <ul class="drop-down">
-                            <li>Managed up to 30 individual projects</li> 
-                            <li>Projects have ranged from small to large</li> 
-                            <li>Extensive problem solving to ensure success in project starts</li> 
-                            <li>Have eraned several in-house certifications</li> 
-                            <li>Focused on customer relations for successful projects</li>
-                            <li>Always supportive of team members to get projects completed</li>
-                          </ul>
-                      </li>
-                      <li>
-                        <span>University </span>
-                        <span id="highlight" className="drop-down-trigger">
-                        BA and MA Degrees
-                        </span>
-                        <ul class="drop-down">
-                            <li>BA in Communications and Public Relations-Univeristy of Mobile</li> 
-                            <li>MA in Counseling-Luther Rice Seminary</li> 
-                            <li>Graduated Magna Cum Laude</li> 
-                            <li>Completed with a 3.98 GPA</li> 
-                            <li>Consistently on the Dean's List</li>
-                          </ul>
-                      </li>
-                      <li>
-                        <span>German & Turkish </span>
-                        <span id="highlight" className="drop-down-trigger">
-                        international experience
-                        </span>
-                        <ul class="drop-down">
-                            <li>Worked in Berlin Germany for 13 years</li> 
-                            <li>Extensive international experience</li> 
-                            <li>Exposed to numerous cultures in an international city</li> 
-                            <li>Learned to speak German and minimal Turkish</li> 
-                          </ul>
-                      </li>
-                      <li>
-                        <span>Am an avid and competitive </span>
-                        <span id="highlight" className="drop-down-trigger">
-                        cyclist
-                        </span>
-                        <ul class="drop-down">
-                            <li>Been cycling for 10 years</li> 
-                            <li>Am very competative</li> 
-                            <li>Always looking to be the best on segments</li> 
-                            <li>Learned to try-and-try-again...until success</li> 
-                            <li>Learned to strategically research, plan and implement success</li>
-                            <li>Love my bike and take excellent care of it</li>
-                          </ul>
-                      </li>
-                    </ul>
-                  </h3>
-                </div>
-              </div>
+      <div className="profile-picture">
+        <img src={profilePic} id="picture" alt="Profile Picture" />
+      </div>
+      <div className="profile-personal">
+        <br />
+        <div id="profile-list">
+          <h1 id="profile-header"><u>Personal Profile</u></h1>
+          <h3>
+            <ul class="profile-list">
+              <li>
+                <span>Born and raised in </span>
+                <span id="highlight" className="drop-down-trigger">
+                  South Africa
+                </span>
+                  <ul class="drop-down">
+                    <li>Born in Germiston</li> 
+                    <li>Raised in Johannesburg</li> 
+                    <li>Attended boys High School</li> 
+                    <li>Earned Service above Self award</li> 
+                    <li>Involved in the sports of cricket, rugby, swimming & water polo</li>
+                    <li>Played water polo for my state</li>
+                  </ul>
+              </li>
+              <li>
+                <span>Am a </span>
+                <span id="highlight" className="drop-down-trigger">
+                naturalized American
+                </span>
+                <ul class="drop-down">
+                    <li>Became a naturalized American in 1998</li> 
+                    <li>Have lived in Alabama, Georgia, Florida & Texas</li> 
+                    <li>Worked for 6 companys</li> 
+                    <li>Have worked in sales, leadership and management roles</li>
+                  </ul>
+              </li>
+              <li>
+                <span>UT Austin and a </span>
+                <span id="highlight" className="drop-down-trigger">
+                Certificate in coding
+                </span>
+                <ul class="drop-down">
+                    <li>Completed a course in Full-Stack coding</li> 
+                    <li>Strengths are in HTML and CSS in particular</li> 
+                    <li>Learned about front end, mid and back end coding</li> 
+                    <li>Database knowledge is in MySQL, NoSql & MongoDB</li>
+                    <li>Experience in node.js, express, OOP, ORM, MVC</li>  
+                    <li>Aquired knowledge in React, MERN and State</li>
+                    <li>Learned to utilize NPM libraries</li>
+                  </ul>
+              </li>
+              <li>
+                <span>Accrued numerous </span>
+                <span id="highlight" className="drop-down-trigger">
+                transferable skills
+                </span>
+                <ul class="drop-down">
+                    <li>Strong communication skills</li> 
+                    <li>Extensive team leadership experience</li> 
+                    <li>Solid knowledge in project management</li> 
+                    <li>Self-disciplined and highly task-oriented</li> 
+                    <li>Self-motivated to finish the job</li>
+                    <li>Highly focused on quality over quantity</li>
+                  </ul>
+              </li>
+              <li>
+                <span>Extensive experience in </span>
+                <span id="highlight" className="drop-down-trigger">
+                Project Management
+                </span>
+                <ul class="drop-down">
+                    <li>Managed up to 30 individual projects</li> 
+                    <li>Projects have ranged from small to large</li> 
+                    <li>Extensive problem solving to ensure success in project starts</li> 
+                    <li>Have eraned several in-house certifications</li> 
+                    <li>Focused on customer relations for successful projects</li>
+                    <li>Always supportive of team members to get projects completed</li>
+                  </ul>
+              </li>
+              <li>
+                <span>University </span>
+                <span id="highlight" className="drop-down-trigger">
+                BA and MA Degrees
+                </span>
+                <ul class="drop-down">
+                    <li>BA in Communications and Public Relations-Univeristy of Mobile</li> 
+                    <li>MA in Counseling-Luther Rice Seminary</li> 
+                    <li>Graduated Magna Cum Laude</li> 
+                    <li>Completed with a 3.98 GPA</li> 
+                    <li>Consistently on the Dean's List</li>
+                  </ul>
+              </li>
+              <li>
+                <span>German & Turkish </span>
+                <span id="highlight" className="drop-down-trigger">
+                international experience
+                </span>
+                <ul class="drop-down">
+                    <li>Worked in Berlin Germany for 13 years</li> 
+                    <li>Extensive international experience</li> 
+                    <li>Exposed to numerous cultures in an international city</li> 
+                    <li>Learned to speak German and minimal Turkish</li> 
+                  </ul>
+              </li>
+              <li>
+                <span>Am an avid and competitive </span>
+                <span id="highlight" className="drop-down-trigger">
+                cyclist
+                </span>
+                <ul class="drop-down">
+                    <li>Been cycling for 10 years</li> 
+                    <li>Am very competative</li> 
+                    <li>Always looking to be the best on segments</li> 
+                    <li>Learned to try-and-try-again...until success</li> 
+                    <li>Learned to strategically research, plan and implement success</li>
+                    <li>Love my bike and take excellent care of it</li>
+                  </ul>
+              </li>
+            </ul>
+          </h3>
+        </div>
+      </div>
     </section>
 
     <section id="portfolio-container">
