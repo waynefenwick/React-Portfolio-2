@@ -55,9 +55,10 @@ const Content = () => {
   
   return (
     <>
+    
     <section id="profile-container">
           <div className="profile-picture">
-            <img src={profilePic} id="picture" alt="Profile Picture" className="rotate-trigger" />
+            <img src={profilePic} id="picture" alt="Profile Picture" />
           </div>
               <div className="profile-personal">
                 <br />
@@ -75,7 +76,7 @@ const Content = () => {
                             <li>Raised in Johannesburg</li> 
                             <li>Attended boys High School</li> 
                             <li>Earned Service above Self award</li> 
-                            <li>Involved in rugby & swimming</li>
+                            <li>Involved in the sports of cricket, rugby, swimming & water polo</li>
                             <li>Played water polo for my state</li>
                           </ul>
                       </li>
@@ -85,10 +86,10 @@ const Content = () => {
                         naturalized American
                         </span>
                         <ul class="drop-down">
-                            <li>Became a nauralized American in 1994</li> 
+                            <li>Became a naturalized American in 1998</li> 
                             <li>Have lived in Alabama, Georgia, Florida & Texas</li> 
                             <li>Worked for 6 companys</li> 
-                            <li>Have played Sales, leadership and management roles</li>
+                            <li>Have worked in sales, leadership and management roles</li>
                           </ul>
                       </li>
                       <li>
@@ -97,12 +98,13 @@ const Content = () => {
                         Certificate in coding
                         </span>
                         <ul class="drop-down">
-                            <li>Completed a course in Full-Stack Coding</li> 
+                            <li>Completed a course in Full-Stack coding</li> 
                             <li>Strengths are in HTML and CSS in particular</li> 
                             <li>Learned about front end, mid and back end coding</li> 
-                            <li>Database knowledge is in MySQL and MongoDB</li> 
-                            <li>Aquired knowledge in React, MERN</li>
-                            <li>Learned to use Node.js, Express.js and NPM libraries</li>
+                            <li>Database knowledge is in MySQL, NoSql & MongoDB</li>
+                            <li>Experience in node.js, express, OOP, ORM, MVC</li>  
+                            <li>Aquired knowledge in React, MERN and State</li>
+                            <li>Learned to utilize NPM libraries</li>
                           </ul>
                       </li>
                       <li>
@@ -114,7 +116,7 @@ const Content = () => {
                             <li>Strong communication skills</li> 
                             <li>Extensive team leadership experience</li> 
                             <li>Solid knowledge in project management</li> 
-                            <li>Self-disciplined with task-completion goals</li> 
+                            <li>Self-disciplined and highly task-oriented</li> 
                             <li>Self-motivated to finish the job</li>
                             <li>Highly focused on quality over quantity</li>
                           </ul>
@@ -126,17 +128,17 @@ const Content = () => {
                         </span>
                         <ul class="drop-down">
                             <li>Managed up to 30 individual projects</li> 
-                            <li>Projeects have ranged from small to large</li> 
+                            <li>Projects have ranged from small to large</li> 
                             <li>Extensive problem solving to ensure success in project starts</li> 
                             <li>Have eraned several in-house certifications</li> 
-                            <li>Focused on customer relations for successfule projects</li>
-                            <li>Always supportive of team members to get projects complete</li>
+                            <li>Focused on customer relations for successful projects</li>
+                            <li>Always supportive of team members to get projects completed</li>
                           </ul>
                       </li>
                       <li>
                         <span>University </span>
                         <span id="highlight" className="drop-down-trigger">
-                        BA and MA Degrees;
+                        BA and MA Degrees
                         </span>
                         <ul class="drop-down">
                             <li>BA in Communications and Public Relations-Univeristy of Mobile</li> 
