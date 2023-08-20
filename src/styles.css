@@ -83,7 +83,7 @@ body {
   padding: 10px;
   box-shadow: 0px 2px 5px var(--shadow);
   border-radius: 8px;
-  z-index: 2; /* Make sure popup is above other elements */
+  z-index: 2;
   color: var(--black);
   font-weight: bold;
 }
@@ -119,7 +119,7 @@ body {
   box-shadow: 5px 5px 20px var(--shadow);
   width: 350px;
   transition: transform 0.5s;
-  cursor: default; /* Add this line to remove pointer cursor */
+  cursor: default;
 }
 
 
@@ -175,14 +175,14 @@ h1, h3 {
   transition: max-height 0.3s ease-in-out;
   background-color: transparent;
   border-radius: 5px;
-  border: 1px solid transparent; /* Set initial border color to transparent */
+  border: 1px solid transparent;
   color: white;
 }
 
 .drop-down-trigger:hover + .drop-down {
-  max-height: 225px; /* Adjust this value based on the content height */
+  max-height: 225px;
   opacity: 1;
-  border-color: var(--red); /* Show the border when the list is visible */
+  border-color: var(--red);
   background-color: #4b4948;
 }
 
