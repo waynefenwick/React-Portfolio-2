@@ -65,13 +65,13 @@ const Content = () => {
         <div id="profile-list">
           <h1 id="profile-header"><u>Personal Profile</u></h1>
           <h3>
-            <ul class="profile-list">
+            <ul className="profile-list">
               <li>
                 <span>Born and raised in </span>
                 <span id="highlight" className="drop-down-trigger">
                   South Africa
                 </span>
-                  <ul class="drop-down">
+                  <ul className="drop-down">
                     <li>Born in Germiston</li> 
                     <li>Raised in Johannesburg</li> 
                     <li>Attended boys High School</li> 
@@ -88,8 +88,8 @@ const Content = () => {
                 <ul class="drop-down">
                     <li>Became a naturalized American in 1998</li> 
                     <li>Have lived in Alabama, Georgia, Florida & Texas</li> 
-                    <li>Worked for 6 companys</li> 
-                    <li>Have worked in sales, leadership and management roles</li>
+                    <li>Employed by 6 companies</li> 
+                    <li>Fulfilled roles in sales, leadership, service and management</li>
                   </ul>
               </li>
               <li>
@@ -99,10 +99,10 @@ const Content = () => {
                 </span>
                 <ul class="drop-down">
                     <li>Completed a course in Full-Stack coding</li> 
-                    <li>Strengths are in HTML and CSS in particular</li> 
-                    <li>Learned about front end, mid and back end coding</li> 
-                    <li>Database knowledge is in MySQL, NoSql & MongoDB</li>
-                    <li>Experience in node.js, express, OOP, ORM, MVC</li>  
+                    <li>Strengths particularly in HTML and CSS</li> 
+                    <li>Learned front end, mid and back end coding</li> 
+                    <li>Database knowledge in MySQL, NoSql & MongoDB</li>
+                    <li>Experience in node.js, express, OOP, ORM & MVC</li>  
                     <li>Aquired knowledge in React, MERN and State</li>
                     <li>Learned to utilize NPM libraries</li>
                   </ul>
@@ -130,9 +130,9 @@ const Content = () => {
                     <li>Managed up to 30 individual projects</li> 
                     <li>Projects have ranged from small to large</li> 
                     <li>Extensive problem solving to ensure success in project starts</li> 
-                    <li>Have eraned several in-house certifications</li> 
-                    <li>Focused on customer relations for successful projects</li>
-                    <li>Always supportive of team members to get projects completed</li>
+                    <li>Have earned several in-house certifications</li> 
+                    <li>Focused on customer relations for successful project management</li>
+                    <li>Always supportive of team members to promote efficient project completion</li>
                   </ul>
               </li>
               <li>
@@ -141,8 +141,8 @@ const Content = () => {
                 BA and MA Degrees
                 </span>
                 <ul class="drop-down">
-                    <li>BA in Communications and Public Relations-Univeristy of Mobile</li> 
-                    <li>MA in Counseling-Luther Rice Seminary</li> 
+                    <li>BA in Communications and Public Relations - Univeristy of Mobile</li> 
+                    <li>MA in Counseling - Luther Rice Seminary</li> 
                     <li>Graduated Magna Cum Laude</li> 
                     <li>Completed with a 3.98 GPA</li> 
                     <li>Consistently on the Dean's List</li>
@@ -282,3 +282,4 @@ const Content = () => {
 };
 
 export default Content;
+// Testing
