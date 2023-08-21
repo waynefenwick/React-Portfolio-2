@@ -92,7 +92,13 @@ body {
   margin: 0;
 }
 
-/* Profile */
+/* Picture Container */
+#picture-container {
+
+}
+
+
+/* Profile Container*/
 #profile-container {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +127,6 @@ body {
   transition: transform 0.5s;
   cursor: default;
 }
-
 
 .profile-personal {
   display: flex;
@@ -181,12 +186,11 @@ h1, h3 {
 }
 
 .drop-down-trigger:hover + .drop-down {
-  max-height: 450;
+  max-height: 500px;
   opacity: 1;
   border-color: var(--red);
   background-color: #4b4948;
 }
-
 
 .drop-down li {
   margin: 1px 0;
