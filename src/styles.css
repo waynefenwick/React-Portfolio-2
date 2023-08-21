@@ -170,6 +170,7 @@ h1, h3 {
   list-style: inside;
   font-size: 12px;
   padding-left: 10px;
+  padding-right: 10px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
