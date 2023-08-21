@@ -156,7 +156,7 @@ const Content = () => {
                 <ul class="drop-down">
                     <li>Worked in Berlin Germany for 13 years</li> 
                     <li>Extensive international experience</li> 
-                    <li>Exposed to numerous cultures in an international city</li> 
+                    <li>Exposed to numerous cultures in an international environment</li> 
                     <li>Learned to speak German and minimal Turkish</li> 
                   </ul>
               </li>
