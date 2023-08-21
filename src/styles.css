@@ -180,7 +180,7 @@ h1, h3 {
 }
 
 .drop-down-trigger:hover + .drop-down {
-  max-height: 225px;
+  max-height: 270px;
   opacity: 1;
   border-color: var(--red);
   background-color: #4b4948;
